@@ -1,0 +1,30 @@
+{
+  "assets": {
+    "Bonfire": "Assets/_Project/ImportedDecoded/Sprite/BonfireOnlyIcon2.png",
+    "Hut": "Assets/_Project/ImportedDecoded/Sprite/hut.png",
+    "GuardTower": "Assets/_Project/ImportedDecoded/Sprite/guardTower.png",
+    "Storage": "Assets/_Project/ImportedDecoded/Sprite/stockPile.png",
+    "tree": "Assets/_Project/ImportedDecoded/Sprite/tree.png",
+    "wood": "Assets/_Project/ImportedDecoded/Sprite/wood.png",
+    "rock": "Assets/_Project/ImportedDecoded/Sprite/rock.png",
+    "terrain": "Assets/_Project/ImportedDecoded/Sprite/Background.png",
+    "build_btn": "Assets/_Project/ImportedDecoded/Sprite/build3.png",
+    "hammer": "Assets/_Project/ImportedDecoded/Sprite/hammer.png",
+    "build3": "Assets/_Project/ImportedDecoded/Sprite/build3.png",
+    "Spider": "Assets/_Project/ImportedDecoded/Sprite/beastOfBurden.png",
+    "SmallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "enemy.smallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "enemy.SmallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "enemy_smallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "monster.fallback": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "monster_fallback": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "monsterFallback": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
+    "Beast": "Assets/_Project/ImportedDecoded/Sprite/beastOfBurden.png",
+    "hut_icon": "Assets/_Project/ImportedDecoded/Sprite/hut.png",
+    "storage_icon": "Assets/_Project/ImportedDecoded/Sprite/stockPile.png",
+    "tower_icon": "Assets/_Project/ImportedDecoded/Sprite/guardTower.png",
+    "man": "Assets/_Project/ImportedDecoded/Sprite/man 1.png",
+    "villagerMale": "Assets/_Project/ImportedDecoded/Sprite/man 1.png",
+    "villagerFemale": "Assets/_Project/ImportedDecoded/Sprite/woman.png"
+  }
+}

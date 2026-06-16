@@ -1,0 +1,7 @@
+system,recordId,fieldName,decodedValue,sourceAssetPath,sourceClassOrType,sourceField,evidenceText,confidence,fidelityLabel,notes
+Building,hut,labourRequiredToBuild,UNKNOWN,data.unity3d,BuildingDetails,labourRequiredToBuild,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed due to stripped typetrees
+Building,hut,requiredResources,UNKNOWN,data.unity3d,BuildingDetails,resourceRequired,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed
+Building,bonfire,finalCompletion,UNKNOWN,data.unity3d,BuildingDetails,finalCompletion,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed
+Resource,wood,capacity,UNKNOWN,data.unity3d,ResourceData,capacity,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed
+Job,woodcutter,productionPerPhase,UNKNOWN,data.unity3d,JobData,productionPerPhase,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed
+Combat,enemy,health,UNKNOWN,data.unity3d,Enemy,health,field exists in dump but serialized value stripped,LOW,MISSING_FROM_CURRENT_DECODE,UnityPy read_typetree failed

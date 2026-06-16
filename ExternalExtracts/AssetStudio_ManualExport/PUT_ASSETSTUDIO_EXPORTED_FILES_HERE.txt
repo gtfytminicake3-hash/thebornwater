@@ -1,0 +1,1 @@
+Place your exported .json or .txt files from AssetStudio GUI into this directory or its subdirectories.

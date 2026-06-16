@@ -1,0 +1,22 @@
+{
+  "menuItems": [
+    {
+      "id": "Hut",
+      "iconAssetId": "hut_icon",
+      "buildingId": "hut",
+      "status": "FALLBACK_REBUILT"
+    },
+    {
+      "id": "Storage",
+      "iconAssetId": "storage_icon",
+      "buildingId": "storage",
+      "status": "FALLBACK_REBUILT"
+    },
+    {
+      "id": "GuardTower",
+      "iconAssetId": "tower_icon",
+      "buildingId": "guardTower",
+      "status": "FALLBACK_REBUILT"
+    }
+  ]
+}

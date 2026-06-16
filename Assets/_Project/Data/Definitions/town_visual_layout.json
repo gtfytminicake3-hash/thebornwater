@@ -1,0 +1,18 @@
+{
+  "placements": [
+    { "id": "building:bonfire:0", "x": 0, "y": -150, "scale": 1.0 },
+    { "id": "building:hut:0", "x": -200, "y": 50, "scale": 1.0 },
+    { "id": "building:hut:1", "x": -350, "y": 50, "scale": 0.95 },
+    { "id": "building:storage:0", "x": -100, "y": 150, "scale": 0.9 },
+    { "id": "building:guardTower:0", "x": 200, "y": 100, "scale": 1.0 },
+    { "id": "villager:v1", "x": -100, "y": -50, "scale": 1.0 },
+    { "id": "villager:v2", "x": 100, "y": -50, "scale": 1.0 }
+  ],
+  "objects": [
+    { "id": "scene_bg_1", "role": "terrain", "asset": "Assets/_Project/ImportedDecoded/Sprite/Background.png", "x": 0, "y": 0, "width": 3000, "height": 2000, "layer": 0, "preserveAspect": false, "fillScreen": true, "anchorBottom": true },
+    { "id": "tree_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": -400, "y": 200, "width": 128, "height": 128, "layer": 1 },
+    { "id": "tree_2", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": 300, "y": -100, "width": 128, "height": 128, "layer": 1 },
+    { "id": "tree_3", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": -250, "y": -200, "width": 128, "height": 128, "layer": 1 },
+    { "id": "tree_4", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": 200, "y": 300, "width": 128, "height": 128, "layer": 1 }
+  ]
+}

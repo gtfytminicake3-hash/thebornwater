@@ -1,0 +1,2 @@
+uiElement,purpose,decodedAssetPath,sceneOrPanel,backendBinding,fidelityLabel,confidence,notes
+MainMenu,Game entry point,N/A,MainMenuScene,LocalGameBackend.ctor,TEMPORARY_DEV_UI,HIGH,"No asset evidence used, functional bind"

@@ -1,0 +1,4 @@
+system,objectId,field,value,fidelityLabel
+Building,Hut,labourRequiredToBuild,100,PROTOTYPE_FALLBACK
+Combat,Enemy,hp,30,PROTOTYPE_FALLBACK
+Resource,Wood,capacity,250,PROTOTYPE_FALLBACK

@@ -1,0 +1,25 @@
+system,className,methodName,addressOrRVA,reasonToInspect,expectedValueType,status,notes
+Building,BuildingDetails,BuildingDetails__.ctor,See script.json,To find default values assigned in constructor,Numeric,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,Needs IDA to read libil2cpp.so
+Building,BuildingInstance,UpdateConstruction,See script.json,To see how addedLabour is processed,Logic,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,Needs IDA
+Resource,ResourceStorageBuilding,DepositResource,See script.json,To see how resources are added to storage,Logic,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,Needs IDA
+Combat,MonsterManager,SpawnTitan,See script.json,To find raid chance and spawn logic,Logic,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,Needs IDA
+Various,BuildingInstance,BuildingInstance$$DepositResource,24224352,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingInstance,BuildingInstance$$UpdateConstruction,24224564,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,CarpentersWorshop,CarpentersWorshop$$DepositResource,24238784,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,ResourceProductionBuilding,ResourceProductionBuilding$$DepositResource,24249712,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,TrainingBuilding,TrainingBuilding$$DepositResource,24261068,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetails,BuildingDetails$$GetMaxHealth,24486084,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetails,BuildingDetails$$.ctor,24486100,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,CommonSoundsString,CommonSoundsString$$PlayUpdateConstructionSound,24598844,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$OnValidate,24624292,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$ChangeDetailOption,24623784,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$GetBuilding,24625368,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$Tick,24625376,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$Show,24626136,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$DestroyBuilding,24629532,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$MoveBuilding,24629912,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$UpgradeBuilding,24629984,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,BuildingDetailsUI,BuildingDetailsUI$$.ctor,24630300,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,MainBarUI,MainBarUI$$HideBuildingDetails,23674236,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,MainBarUI,MainBarUI$$ShowBuildingDetails,23677296,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,
+Various,MainBarUI,MainBarUI$$<HideBuildingDetails>b__38_0,23679784,Candidate for disassembly,Mixed,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY,

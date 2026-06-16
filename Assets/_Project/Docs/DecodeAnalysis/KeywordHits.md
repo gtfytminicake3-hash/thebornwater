@@ -1,0 +1,354 @@
+# Keyword Hits from global-metadata.dat
+
+## Resource
+- AddResourceToBuildingAction
+- RenderGraphResourcePool
+- InternalGetResourceSet
+- ComputeBufferResource
+- LinkedResource
+- UpdateResourceRing
+- RemoveResourceStorageBuilding
+- GlobalFallbackUIPackageResources
+- get_styleSheetsResourcePath
+- m_OldResources
+
+## Resources
+- s_Resources
+- GetMessageFromNativeResources
+- GetResourceStringEncodingName
+- storedResources
+- UniversalRenderPipelineEditorResources
+- InternalGetResourceSet
+- ShowUnderConstructionResources
+- ShaderResourcesAvailable
+- CheckCharactersCheckResources
+- GetResourceSize
+
+## Building
+- ShowBuildingDetails
+- AddResourceForProductionBuilding
+- buildingIcon
+- RemoveTrainingBuilding
+- AddResourceToBuildingAction
+- BUILDING
+- dockBuildings
+- AddHutBuilding
+- hutBuildings
+- BuildingCanvas
+
+## Build
+- BuildPurchases
+- ShowBuildingDetails
+- internalSubsetBuilder
+- RenderGraphBuilder
+- buildingIcon
+- AddResourceToBuildingAction
+- hutBuildings
+- AddCraftingBuilding
+- ConfigurationBuilder
+- InternalRegisterCanvasElementForGraphicRebuild
+
+## Villager
+- openVillagers
+- OpenVillagers
+
+## Worker
+- GetWorkersDataForDungeon
+- OnAddWorkerClick
+- set_HasWorkerReached
+- RecycleAllDockWorkers
+- AddThisWorker
+- get_workerMesh
+- WORKERS
+- AddUnassignedWorkerToBuildingButton
+- RejectNewWorker
+- RequiresWorkers
+
+## Task
+- CreateTask
+- TaskFactory
+- g__CompleteFetchTaskOnRequestCompleted
+- TrueTask
+- TaskCompletionSourceT_TrySetException_NoExceptions
+- CheckMultiTaskContinuationOptions
+- ValueTaskSourceAsTask
+- taskGetPlayer
+- TaskOnSuccessProxy
+- CreatingTaskID
+
+## Job
+- TScheduleBatchedScriptingJobsAndIsCompleted
+- CreateJob
+- IJob
+- ZBinningJob
+- TransformJobData
+- JObject
+- DrawCallJob
+- k_CullingJobCountUpperLimit
+- AudioJob
+- SyncJobs
+
+## Time
+- XsdKatmaiDateTimeOffsetToString
+- ReadAsDateTimeOffset
+- lifetimePercentage
+- get_DateTimeOverflowMessage
+- _currentWriteTimeout
+- XsdKatmaiDateToDateTime
+- _previousClickTime
+- StringToDateTime
+- GetTimeOfN
+- TimeSpan
+
+## Day
+- AddDays
+- GetDay
+- dayNames
+- dayTicks
+- BENEFIT_NOTIFICATION_FREQUENCY_EVERY_DAY
+- mTotalSpendNext28Days
+- dayNightParameter
+- DaysTo10000
+- currentDayTime
+- GetDayOfMonth
+
+## Night
+- emissionNight
+- rightmidimidnightbluemifmillisecondmillisecondsDelaymillisecondsTimeoutmimeminmin
+- nightTime
+- dayOfWeekdayTimeDurationdaylightDeltadaylightTransitionEnddaynightdayofweekdaysdcrdd
+- nightSet
+- dayNightParameter
+- NightSounds
+- dayNightControllerInstance
+- nightCurve
+- fadeNightIntensity
+
+## Save
+- SaveTraceToException
+- hasSaveFile
+- DeleteCloudSavedGame
+- SaveCurrentDataToP31Prefs
+- CanSave
+- saveLoadUIinternal
+- Autosave
+- cloudSave
+- openedSaved
+- OpenCloudSave
+
+## Load
+- LOAD_BITMAP_METRICS_ONLY
+- isUploaded
+- FindWorstBlendingCellToBeLoaded
+- InitializeCodelessPurchasingOnLoad
+- mLoadedAchievements
+- FMOD_Studio_System_LoadBankMemory
+- FMOD_Studio_System_LoadBankFile
+- clearOnNewSceneLoaded
+- loadedAssembly
+- AssetPackManagerDownloadStatusCallback
+
+## Inventory
+- inventoryData
+- AgentInventory
+- INVENTORY
+- inventoryResourceDisplay
+- myInventory
+- getInventoryDataFromScriptableObject
+
+## Item
+- DropItem
+- SetItem
+- CreateItem
+- cachedSpriteMeshInstance
+- unbindItem
+- m_ItemImage
+- GetExpectedItemHeight
+- WriteMethod
+- expandItemBeginPosition
+- GetLocalizedItemName
+
+## Food
+- We_need_more_food
+- This_looks_like_a_nice_village_I_will_work_for_food
+- foodText
+- foodByCrewText
+- FoodCrew
+- addedFood
+- ShipFoodLastsDays
+- We_can_now_hunt_for_food
+- ItemForFood
+- FOOD
+
+## Wood
+- woodenShip
+- WoodCeiling
+- BlueDodgerBlueDogwood
+- WoodenShip
+- We_have_been_wandering_the_woods_looking_for_shelter
+- woodsGame
+- Hollywood
+- HideInTheWoods
+- depositSoundWood
+- BurlyWood
+
+## Coal
+- ValidateCoalesceArgTypes
+- get_CoalesceUsedOnNonNullType
+- Coal
+- CoalescingBranchInstruction
+- CoalesceUsedOnNonNullType
+- EmitCoalescingBranch
+- nullCoalescingBranchCobalt
+- CoalesceConversionBinaryExpression
+- CoalMiner
+- CoalesceBlockWithPrevious
+
+## Iron
+- IEnvironments
+- x__0_0x00__ADDITIONAL_LIGHTS_ADDITIONAL_LIGHTS_VERTEX_ADDITIONAL_LIGHT_SHADOWS_AOColor_AOParams_AOTex_AccumOrig_AdaptParams_AdaptTex_AdaptionSpeed_AdditionalLightsAttenuation_AdditionalLightsBuffer_AdditionalLightsColor_AdditionalLightsCookieAtlasTexture_AdditionalLightsCookieAtlasTextureFormat_AdditionalLightsCookieAtlasUVRectBuffer_AdditionalLightsCookieAtlasUVRects_AdditionalLightsCookieEnableBits_AdditionalLightsCount_AdditionalLightsIndices_AdditionalLightsLayerMasks_AdditionalLightsLightTypeBuffer_AdditionalLightsLightTypes_AdditionalLightsOcclusionProbes_AdditionalLightsPosition_AdditionalLightsShadowmapTexture_AdditionalLightsSpotDir_AdditionalLightsWorldToLightBuffer_AdditionalLightsWorldToLights_AdditionalLightsWorldToShadow_AdditionalLightsWorldToShadow_SSBO_AdditionalShadowFadeParams_AdditionalShadowOffset0_AdditionalShadowOffset1_AdditionalShadowParams_AdditionalShadowParams_SSBO_AdditionalShadowmapSize_AfterPostProcessTexture_Alpha_AlphaToMaskAvailable_AmbientOcclusionParam_Angle_ArScale_AreaTex_AreaTexture_AutoExposureTex_AxialAberration_Axis_BLOOM_HQ_BLOOM_HQ_DIRT_BLOOM_LQ_BLOOM_LQ_DIRT_BLUE_NOISE_Bevel_BlendTex_BlendTexture_BlitCubeTexture_BlitDecodeInstructions_BlitMipLevel_BlitPaddingSize_BlitScaleBias_BlitScaleBiasRt_BlitTexture_BlitTextureSize_Bloom_BloomMipDown_BloomMipUp_BloomTex_Bloom_Color_Bloom_DirtTex_Bloom_DirtTileOffset_Bloom_Params_Bloom_RGBM_Bloom_Settings_Bloom_Texture_BlueNoiseTexture_BlueNoise_Texture_Blur_BlurArea_BlurDirectionPacked_BlurDistance_BlurFilterDistance_BlurRadius_BlurSize_Blurred_BlurredColor_BokehConstants_BokehKernel_BokehParams_Brightness_BypassList_BypassOnLocal_CASTING_PUNCTUAL_LIGHT_SHADOW_CHROMATIC_ABERRATION_CameraColorAttachment_CameraColorTexture_CameraDepthAttachment_CameraDepthAttachment_Temp_CameraDepthTexture_CameraNormalsTexture_CameraOpaqueTexture_CameraRenderingLayersTexture_CameraSortingLayerTexture_CameraTargetAttachment_CameraViewProjections_CameraViewTopLeftCorner_CameraViewXExtent_CameraViewYExtent_CameraViewZExtent_CameraWS_CascadeShadowSplitSphereRadii_CascadeShadowSplitSpheres0_CascadeShadowSplitSpheres1_CascadeShadowSplitSpheres2_CascadeShadowSplitSpheres3_CautionColor_CautionThreshold_CenterRadius_ChannelMixerBlue_ChannelMixerGreen_ChannelMixerRed_Chroma_Params_ChromaticAberration_ChromaticAberration_Amount_ChromaticAberration_SpectralLut_ChunkList_Clamp_ClearStencilReadMask_ClearStencilRef_ClearStencilWriteMask_ClipRect_ClipRects_Clouds_ClutTex_CoCParams_CoCTex_CodeBase_Color_ColorBalance_ColorBuffer_ColorConversion_ColorFilter_ColorIntensity_ColorMask_ColorTexture_ColorTransform_Column_CookieLightIndex_CookieTex_CosTime_CriticalColor_Cube_CullDistance_CullMode_CultureInfo_CurTex_Curve_CurveBlue_CurveGreen_CurveHueVsHue_CurveHueVsSat_CurveLumVsSat_CurveMaster_CurveParams_CurveRed_CurveSatVsSat_Curves_CustomToneCurve_DBUFFER_MRT1_DBUFFER_MRT2_DBUFFER_MRT3_DBufferTexture0_DBufferTexture1_DBufferTexture2_DBufferTexture3_DEBUG_ENVIRONMENTREFLECTIONS_OFF_DECAL_LAYERS_DECAL_NORMAL_BLEND_HIGH_DECAL_NORMAL_BLEND_LOW_DECAL_NORMAL_BLEND_MEDIUM_DEFERRED_FIRST_LIGHT_DEFERRED_MAIN_LIGHT_DEFERRED_MIXED_LIGHTING_DEPTH_MSAA_2_DEPTH_MSAA_4_DEPTH_MSAA_8_DIRECTIONAL_DISTORTION_DITHERING_DX11NoiseTime_DebugColor_DebugColorInvalidMode_DebugFullScreenMode_DebugHDRMode_DebugLightingFeatureFlags_DebugLightingMode_DebugMaterialMode_DebugMaterialValidationMode_DebugMaxPixelCost_DebugMipInfoMode_DebugRenderTargetSupportsStereo_DebugSceneOverrideMode_DebugScreenColor_DebugScreenDepth_DebugTexture_DebugTextureDisplayRect_DebugTextureNoStereo_DebugValidateAboveMaxThresholdColor_DebugValidateAlbedoCompareColor_DebugValidateAlbedoHueTolerance_DebugValidateAlbedoMaxLuminance_DebugValidateAlbedoMinLuminance_DebugValidateAlbedoSaturationTolerance_DebugValidateBelowMinThresholdColor_DebugValidateMetallicMaxValue_DebugValidateMetallicMinValue_DebugValidationMode_DebugVertexAttributeMode_DecalLayerMaskFromDecal_DepthOfFieldTemp_DepthOfFieldTex_DepthSlice_Destination_DimensionsAndLerp_DisplayVelocityScale_Distance_DistanceParams_Distortion_Amount_Distortion_CenterScale_Distortion_Params1_Distortion_Params2_DitheringTex_DitheringTexture_DitheringTextureInvSize_Dithering_Coords_Dithering_Params_DofTexture_DownSampleScaleFactor_DrawObjectPassData_DrawOrder_DstBlend_EASU_RCAS_AND_HDR_INPUT_EdgeColorTexture_EdgeSharpness_EdgeStencilTexture_EdgeTexture_EdgeThreshold_EdgeThresholdMin_EmptyAdditionalLightShadowmapTexture_EmptyMainLightShadowmapTexture_EnvMatrix_EnvMatrixRotation_ExposureAdjustment_ExposureCompensation_FILM_GRAIN_FORWARD_PLUS_FOVEATED_RENDERING_NON_UNIFORM_RASTER_FPParams0_FPParams1_FPParams2_FXAA_FXAA_AND_GAMMA_20_FaceColor_FaceDilate_FaceShininess_FaceTex_FalloffDistance_FalloffIntensity_FalloffLookup_FarCorner_FgCocMask_FgOverlap_FinalBlendParameters_Flags_FlareColorValue_FlareData0_FlareData1_FlareData2_FlareData3_FlareData4_FlareData5_FlareOcclusionIndex_FlareOcclusionRemapTex_FlareOcclusionTex_FlareTex_Float4_Fog_FogColor_FogParams_ForegroundBlurExtrude_From_FrustumCornersWS_FsrEasuConstants0_FsrEasuConstants1_FsrEasuConstants2_FsrEasuConstants3_FsrRcasConstants_FullCoCTexture_FullscreenPassColorCopy_FullscreenProjMat_GAMMA_20_GBUFFER_NORMALS_OCT_GBuffer0_GBuffer1_GBuffer2_GBuffer3_GBuffer4_GBuffer5_GBuffer6_GENERIC_Gain_Gamma_GlobalMipBias_GlossyEnvironmentColor_GlossyEnvironmentCubeMap_GlossyEnvironmentCubeMap_HDR_GlowColor_GlowInner_GlowOffset_GlowOuter_GlowPower_GoodColor_GoodThreshold_GradientScale_GradientSettingsTex_GrainTex_Grain_Params_Grain_Params1_Grain_Params2_Grain_Texture_Grain_TilingParams_GrassLevel_GrassScale_HDRColorspace_HDRDebugDummyRT_HDRDebugParams_HDREmulationScale_HDREncoding_HDROutputGradingParams_HDROutputLuminanceParams_HDR_GRADING_HIGH_QUALITY_SAMPLING_HalfCoCTexture_HalfResFinalCopy_HandleZTest_HashAlgorithm_HashAlgorithmForControl_HashForControl_HdrParams_HeightParams_Highlights_HistogramBuffer_History_HistoryTex_HrDepthTex_HueSatCon_INTERLEAVED_GRADIENT_Id_IndexInAtlas_InnerAngleMult_InnerRadiusMult_InputDepthTexture_Intensity_InternalGradingLut_InternalLut_Interp_InvGamma_InvRenderTargetSize_InvViewProj_InverseHDREmulationScale_InverseViewMatrix_IsFullSpotlight_IsoPerimeter_Jitter_KawaseBlurIteration_LIGHT_COOKIES_LIGHT_LAYERS_LINEAR_TO_SRGB_CONVERSION_LastKawasePass_LensCoeff_LensDirt_Intensity_LensDirt_Params_LensDirt_Texture_Level_Level2_Lift_LightAngle_LightAttenuation_LightColor_LightDirection_LightFlags_LightInvMatrix_LightLayerMask_LightLookup_LightOcclusionProbInfo_LightPos_LightPosWS_LightPosition_LightTexture_
+- environments
+- currentEnvironment
+- MatchesCurrentEnvironment
+- overridesEnvironmentLighting
+- IronMiner
+- UpdateCurrentEnvironment
+- glossyEnvironmentColor
+- IronSource
+
+## Gold
+- sizepageNumberpageToDisplaypalegoldenrodpalegreenpaleovu
+- GoldRose
+- GoldVenetian
+- PaleGoldenrod
+- GoldHebrewHebrew
+- GoldPale
+- Gold
+- DarkGoldenrod
+- GoldenrodDark
+- DKdarkbluedarkcyandarkgoldenroddarkgraydarkgreendarkgreydarkkhakidarkmagentadarkolivegreendarkorangedarkorchiddarkreddarksalmondarkseagreendarkslatebluedarkslategraydarkslategreydarkturquoisedarkvioletdatadata
+
+## Enemy
+- enemyType
+- SetEnemyDataDirty
+- MediumEnemy
+- EnemyLocation
+- GetEnemyInstances
+- GetRemainingEnemyAgentsFromSavedData
+- enemyInRange
+- enemy
+- SetEnemyData
+- enemyEngaged
+
+## Raid
+- s_ActiveCameraId
+- OrcRaider
+
+## Explore
+- VALIANT_EXPLORER
+- dungeonExploredTimes
+- ExploredDungeon
+- ShowExploredTimes
+- achievement_explorer
+- Unexplored
+- Brave_explorer
+
+## Expedition
+- expeditionPanel
+- expeditionstart
+- launchExpeditionButton
+- Expedition
+- EXPEDITION
+- DisplayExpeditionPanel
+- ShipOnExpedition
+- expeditionUI
+- StartExpedition
+- ExpeditionUI
+
+## Map
+- LOAD_BITMAP_METRICS_ONLY
+- CubemapFace
+- bitmapimage
+- mipMapBias
+- GenerateLongMap
+- remap
+- get_ObjectMapIdTable
+- ReadTypeMap
+- _map
+- ColumnMappingDataTable
+
+## Scene
+- GetSceneManager
+- FinalCutscene
+- sceneLoaded
+- IsSceneFilteringEnabled
+- inSceneCullingMask
+- cutsceneThreeNames
+- RegisterToOnSceneLoaded
+- finalCutsceneIndex
+- clearOnNewSceneLoaded
+- ApplySceneOffsets
+
+## Menu
+- OnContextualMenuEvent
+- headerContextMenuPopulateEvent
+- VolumeComponentMenu
+- m_DropdownMenuEventInfo
+- set_displayMenuHandledOSX
+- enhancedKeyUsagesentitiesentityenumenumTypeenumType
+- debugMainMenuInitTime
+- framenumber
+- get_menu
+- editMenuPriority4
+
+## Audio
+- HAudioPlayableGraphExtensionsBindingsU
+- AudioTextUpdateRate
+- audio
+- StopAudioOutput
+- itaudio
+- AudioJob
+- mpequrlaudio
+- AudioPlayableGraphExtensions
+- WEBAUDIO
+- vocaudio
+
+## FMOD
+- ToFMODThreadAffinity
+- FMOD_Studio_System_StartCommandCapture
+- FMOD_Studio_EventDescription_IsSnapshot
+- FMOD_Studio_System_LoadBankMemory
+- FMOD5_Channel_Get3DCustomRolloff
+- FMOD_Studio_Bus_UnlockChannelGroup
+- FMOD_Studio_System_LoadBankFile
+- FMODorientationoriginoriginalRuleoriginalTransactionIdosPlatformosVersionosxotherotherSimpleTypeoutoutArrayoutputoutputBufferoutputOffsetoverflowoverflowModeoverrideoverrideRichTextColorsownershipTypepp10p12p7ap7cp7mp7rp7spapa
+- FMOD5_System_GetChannel
+- FMOD_Studio_System_GetBank
+
+## IAP
+- IAPSecurityException
+- IAppleStoreExtendedPurchaseService
+- IAppStateEventClient
+- IAppleStoreCallbacks
+- WaitForIAPInitialization
+- IAppleAppReceiptViewer
+- enableIAPInternet
+- CreateCodelessIAPStoreListenerInstance
+- IAppReceiptUseCase
+- UnityIAPServices
+
+## Ad
+- ThreadHelper
+- JCleverAdsSolutions
+- ReadAsDateTimeOffset
+- AddClosureVariable
+- IncorrectNumberOfLambdaDeclarationParameters
+- GetTemporaryShadowTexture
+- AddNode
+- GetAddMethod
+- ShowTradeRoutes
+- ReadNull
+
+## Firebase
+- FirebaseInit
+

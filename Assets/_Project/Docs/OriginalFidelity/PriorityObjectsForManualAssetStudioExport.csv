@@ -1,0 +1,11 @@
+priority,system,objectPathId,objectName,matchedClassName,reasonToExport,expectedFields,confidence,notes
+HIGH,Building,UNKNOWN,BuildingData,BuildingData,Contains all buildings list,buildings array,HIGH,
+HIGH,Building,UNKNOWN,Hut_Details,BuildingDetails,Cost and completion for Hut,labourRequiredToBuild/resourceRequired,MEDIUM,Look for Hut keywords
+HIGH,Building,UNKNOWN,Bonfire_Details,BuildingDetails,Cost and completion for Bonfire,labourRequiredToBuild/resourceRequired,MEDIUM,
+HIGH,Resource,UNKNOWN,Wood_Data,ResourceData,Capacity and details for Wood,capacity,MEDIUM,
+HIGH,Resource,UNKNOWN,Food_Data,ResourceData,Capacity and details for Food,capacity,MEDIUM,
+HIGH,Job,UNKNOWN,Woodcutter_Job,JobData,Production values,productionPerPhase,MEDIUM,
+HIGH,Job,UNKNOWN,Guard_Job,JobData,Defense values,damage/defense,MEDIUM,
+HIGH,Combat,UNKNOWN,MonsterManager,MonsterManager,Raid chances,raidChance/spawnRates,MEDIUM,
+HIGH,Combat,UNKNOWN,Enemy_Spider,Enemy,Enemy stats,health/damage,MEDIUM,
+HIGH,Building,UNKNOWN,Storage_Details,BuildingDetails,Storage capacity,capacity/storage,MEDIUM,

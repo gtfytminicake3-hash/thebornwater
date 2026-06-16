@@ -1,0 +1,4 @@
+entityType,state,decodedAssetPath,currentRuntimeUse,fidelityLabel,confidence,evidence,notes
+Villager,Idle/Worker,Assets/_Project/ImportedDecoded/Sprite/man.png,VillagerRuntimeView,DECODE_EVIDENCE_PARTIAL,MEDIUM,Filename,Need to distinguish jobs later
+Building,Hut,Assets/_Project/ImportedDecoded/Sprite/hut.png,BuildingRuntimeView,ORIGINAL_DECODE_EVIDENCE,HIGH,Filename,AssetStudio export
+Enemy,Attacking,None,EnemyRuntimeView,TEMPORARY_DEV_UI,LOW,None,Fallback until sprite found

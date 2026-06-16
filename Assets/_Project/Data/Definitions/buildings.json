@@ -1,0 +1,67 @@
+[
+  {
+    "id": "bonfire",
+    "displayName": "Bonfire",
+    "assetKey": "bonfire",
+    "animationKey": null,
+    "status": "DECODE_BLUEPRINT_PARTIAL",
+    "sourceEvidence": [
+      "asset: Assets/_Project/ImportedDecoded/Sprite/BonfireOnlyIcon2.png",
+      "il2cpp_dump: BonfireBuilding"
+    ],
+    "costs": {
+      "wood": 0
+    },
+    "constructionRequired": 0,
+    "constructionAssetKey": null
+  },
+  {
+    "id": "hut",
+    "displayName": "Hut",
+    "assetKey": "hut",
+    "animationKey": null,
+    "status": "DECODE_BLUEPRINT_PARTIAL",
+    "sourceEvidence": [
+      "asset: Assets/_Project/ImportedDecoded/Sprite/hut.png",
+      "il2cpp_dump: HutBuilding"
+    ],
+    "costs": {
+      "wood": 50
+    },
+    "constructionRequired": 100,
+    "constructionAssetKey": null
+  },
+  {
+    "id": "storage",
+    "displayName": "Storage",
+    "assetKey": "storage",
+    "animationKey": null,
+    "status": "DECODE_BLUEPRINT_PARTIAL",
+    "sourceEvidence": [
+      "asset: Assets/_Project/ImportedDecoded/Sprite/stockPile.png",
+      "il2cpp_dump: Storage / ResourceInstance"
+    ],
+    "costs": {
+      "wood": 20
+    },
+    "constructionRequired": 50,
+    "constructionAssetKey": null
+  },
+  {
+    "id": "guardTower",
+    "displayName": "Guard Tower",
+    "assetKey": "guardTower",
+    "animationKey": null,
+    "status": "DECODE_BLUEPRINT_PARTIAL",
+    "sourceEvidence": [
+      "asset: Assets/_Project/ImportedDecoded/Sprite/guardTower.png",
+      "il2cpp_dump: GuardTower"
+    ],
+    "costs": {
+      "wood": 80,
+      "iron": 20
+    },
+    "constructionRequired": 100,
+    "constructionAssetKey": null
+  }
+]

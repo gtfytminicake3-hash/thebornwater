@@ -1,0 +1,30 @@
+System/Component,Current Status,Fidelity Label,Disposition,Reason
+MainMenuScene,Functional,DECODE_EVIDENCE_PARTIAL,KEEP_AS_DECODE_EVIDENCE_PARTIAL,Basic flow exists but missing original animated background and real UI layout
+TownScene,Functional,DECODE_EVIDENCE_PARTIAL,KEEP_AS_DECODE_EVIDENCE_PARTIAL,Needs to be reorganized into original HUD vs World layers
++10 WOOD Button,Debug Only,PROTOTYPE_FALLBACK,MOVE_TO_DEBUG_TOOL,Original player UI does not have cheat buttons
+ASSIGN WORKER Button,Debug/Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Original job assignment UI is UNKNOWN. Evidence suggests JobData / AIAgent / building occupation systems exist but exact player UI flow needs more decode evidence.
+BUILD HUT Button,Debug/Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Build menu should follow original UI flow; exact UI mapping is UNKNOWN
+BUILD STORAGE Button,Debug/Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Same as Build Hut
+BUILD GUARD TOWER Button,Debug/Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Same as Build Hut
+NEXT TIME Button,Debug Only,PROTOTYPE_FALLBACK,MOVE_TO_DEBUG_TOOL,Time advances via DayNightController logic
+FORCE RAID Button,Debug Only,PROTOTYPE_FALLBACK,MOVE_TO_DEBUG_TOOL,Raids trigger via DayNightController
+SAVE GAME Button,Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Original uses SaveLoadUtility; exact UI trigger UNKNOWN
+LOAD GAME Button,Fallback,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Should be triggered from Main Menu Continue
+LocalGameBackend,Core Loop Running,DECODE_EVIDENCE_PARTIAL,REWRITE_TO_MATCH_DECODE,Needs complete reconstruction following original C# structures (AIAgent, BuildingInstance)
+MockBackend,Deprecated,PROTOTYPE_FALLBACK,REMOVE_FROM_FIDELITY_MODE,Hardcoded mock logic has no place in fidelity mode
+DataRepository,Functional,DECODE_EVIDENCE_PARTIAL,KEEP_AS_DECODE_EVIDENCE_PARTIAL,Needs to read from actual decoded ScriptableObjects or exact JSON map
+resources.json,Functional,DECODE_EVIDENCE_PARTIAL,REWRITE_TO_MATCH_DECODE,Numbers are fallback; need extraction from ResourceData
+buildings.json,Functional,DECODE_EVIDENCE_PARTIAL,REWRITE_TO_MATCH_DECODE,Numbers are fallback; need extraction from BuildingData
+jobs.json,Functional,DECODE_EVIDENCE_PARTIAL,REWRITE_TO_MATCH_DECODE,Numbers are fallback; need extraction from JobData
+tasks.json,Functional,PROTOTYPE_FALLBACK,REMOVE_FROM_FIDELITY_MODE,Tasks should be driven by TaskManager/AIAgent states
+enemies.json,Functional,DECODE_EVIDENCE_PARTIAL,REWRITE_TO_MATCH_DECODE,Need exact stats from EnemyData/CharacterManager
+balance.json,Functional,PROTOTYPE_FALLBACK,REMOVE_FROM_FIDELITY_MODE,Should map to original GameBalance or config scripts
+objectives.json,Functional,PROTOTYPE_FALLBACK,REMOVE_FROM_FIDELITY_MODE,Should map to original ObjectiveManager
+Building Construction logic,Multi-step added,DECODE_EVIDENCE_PARTIAL,KEEP_AS_DECODE_EVIDENCE_PARTIAL,Uses currentCompletion but UI flow and precise agent labor needs rebuild
+Villager/Job logic,Simulated,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Needs to use AIAgent, Pathfinding, and StateMachine
+Resource production logic,Phase-based,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Resource transport/deposit is DECODE_EVIDENCE_PARTIAL. DepositResource / ResourceInstance / AIAgent evidence exists but exact delivery sequence and storage interaction are UNKNOWN until call flow or ScriptableObject/prefab evidence is found.
+Day/Night logic,Phase-based,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Needs continuous time simulation (DayNightController)
+Combat/Raid logic,Phase-based,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Needs physical pathing, CharacterManager, and projectile physics
+Save/Load logic,JSON Dump,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Needs original SaveLoadUtility structure (ES3 or custom binary)
+Frontend HUD/views,Text-based,PROTOTYPE_FALLBACK,REWRITE_TO_MATCH_DECODE,Must map to original uGUI prefabs. Any testing UI must be labeled TEMPORARY_DEV_UI.
+Imported decoded assets,Present,ORIGINAL_CONFIRMED,KEEP_AS_ORIGINAL_CONFIRMED,2D sprites and audio files are true original

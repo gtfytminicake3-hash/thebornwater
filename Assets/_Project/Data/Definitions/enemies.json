@@ -1,0 +1,18 @@
+[
+    {
+        "id": "SmallMonster",
+        "displayName": "Small Monster",
+        "hp": 30,
+        "attack": 15,
+        "raidWeight": 1,
+        "source": "il2cpp_dump",
+        "confidence": "MEDIUM",
+        "symbolEvidence": "MonsterManager / SpawnTitan",
+        "behaviorEvidence": "UNKNOWN",
+        "balanceEvidence": "PROTOTYPE_FALLBACK",
+        "decodedValueSource": "Il2CppDump field/schema",
+        "fidelityLabel": "DECODE_EVIDENCE_PARTIAL",
+        "valueConfidence": "LOW",
+        "notes": "field exists in dump; numeric value fallback"
+    }
+]

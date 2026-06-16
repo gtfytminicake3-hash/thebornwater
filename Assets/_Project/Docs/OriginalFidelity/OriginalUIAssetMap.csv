@@ -1,0 +1,11 @@
+button_name,classification,notes
+NEW GAME,ORIGINAL_CONFIRMED,Standard main menu
+LOAD GAME,ORIGINAL_CONFIRMED,Standard main menu
++10 WOOD,DEBUG_ONLY,Cheat button
+ASSIGN WORKER,PROTOTYPE_FALLBACK,Original uses JobMenu
+BUILD HUT,PROTOTYPE_FALLBACK,Original uses BuildMenu categorization
+BUILD STORAGE,PROTOTYPE_FALLBACK,Original uses BuildMenu categorization
+BUILD GUARD TOWER,PROTOTYPE_FALLBACK,Original uses BuildMenu categorization
+NEXT TIME,DEBUG_ONLY,Original uses DayNightController ticks
+SAVE GAME,DEBUG_ONLY,Original uses Pause Menu or Auto-save
+FORCE RAID,DEBUG_ONLY,Developer cheat

@@ -1,0 +1,2 @@
+asset_id,source_path,asset_type,probable_usage,scene_or_ui_guess,import_strategy,placeholder_used,note
+main_data,data.unity3d,UnityWebData,All scenes,All,EXTRACTED (count: 1190),PARTIAL,Extracted via UnityPy

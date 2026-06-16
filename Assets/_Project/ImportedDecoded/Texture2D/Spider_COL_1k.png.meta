@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 720f8979e914c394086a449e9309512b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6625666457425210088
+    second: Spider_COL_1k_0
+  - first:
+      213: -7042575154003035186
+    second: Spider_COL_1k_1
+  - first:
+      213: 7875926143654156347
+    second: Spider_COL_1k_2
+  - first:
+      213: 7009827157930468815
+    second: Spider_COL_1k_3
+  - first:
+      213: 2432133631494021435
+    second: Spider_COL_1k_4
+  - first:
+      213: -8698163110172687480
+    second: Spider_COL_1k_5
+  - first:
+      213: 745893599582187943
+    second: Spider_COL_1k_6
+  - first:
+      213: 4028692846008722641
+    second: Spider_COL_1k_7
+  - first:
+      213: 4953082861279586865
+    second: Spider_COL_1k_8
+  - first:
+      213: 4559135352060533876
+    second: Spider_COL_1k_9
+  - first:
+      213: 7668253751667997900
+    second: Spider_COL_1k_10
+  - first:
+      213: -3809251948134669916
+    second: Spider_COL_1k_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spider_COL_1k_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 586
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaec0be98813fb50800000000000000
+      internalID: 6625666457425210088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_1
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 773
+        width: 235
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb38a9e53fb34e90800000000000000
+      internalID: -7042575154003035186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 878
+        width: 205
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38d7b56919ec4d60800000000000000
+      internalID: 7875926143654156347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 634
+        width: 257
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5e45519a8e74160800000000000000
+      internalID: 7009827157930468815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 521
+        width: 264
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b316b7fd6aca0c120800000000000000
+      internalID: 2432133631494021435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_5
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 415
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88300c37cbae94780800000000000000
+      internalID: -8698163110172687480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 651
+        width: 401
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a17553e642f95a00800000000000000
+      internalID: 745893599582187943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_7
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 616
+        width: 81
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4e18b6ccac8e730800000000000000
+      internalID: 4028692846008722641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 357
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a25a9ae92ecb440800000000000000
+      internalID: 4953082861279586865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_9
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 406
+        width: 266
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c5e76827d454f30800000000000000
+      internalID: 4559135352060533876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 602
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc3ab3b82c1b6a60800000000000000
+      internalID: 7668253751667997900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_COL_1k_11
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4
+        width: 170
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1e7731981d22bc0800000000000000
+      internalID: -3809251948134669916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spider_COL_1k_0: 6625666457425210088
+      Spider_COL_1k_1: -7042575154003035186
+      Spider_COL_1k_10: 7668253751667997900
+      Spider_COL_1k_11: -3809251948134669916
+      Spider_COL_1k_2: 7875926143654156347
+      Spider_COL_1k_3: 7009827157930468815
+      Spider_COL_1k_4: 2432133631494021435
+      Spider_COL_1k_5: -8698163110172687480
+      Spider_COL_1k_6: 745893599582187943
+      Spider_COL_1k_7: 4028692846008722641
+      Spider_COL_1k_8: 4953082861279586865
+      Spider_COL_1k_9: 4559135352060533876
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

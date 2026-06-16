@@ -1,0 +1,9 @@
+source_symbol,source_file_or_dump,probable_system,new_rebuild_class,confidence,note
+AddResourceToBuildingAction,global-metadata.dat,ResourceSystem,ResourceSystem,MEDIUM,Found string hit
+ShowBuildingDetails,global-metadata.dat,BuildingSystem,BuildingSystem,MEDIUM,Found string hit
+openVillagers,global-metadata.dat,VillagerSystem,VillagerSystem,MEDIUM,Found string hit
+CreateTask,global-metadata.dat,TaskSystem,TaskSystem,MEDIUM,Found string hit
+XsdKatmaiDateTimeOffsetToString,global-metadata.dat,TimeSystem,TimeSystem,MEDIUM,Found string hit
+SaveTraceToException,global-metadata.dat,SaveSystem,SaveSystem,MEDIUM,Found string hit
+NOT_FOUND,None,CombatSystem,CombatSystem,LOW,No metadata hit
+VALIANT_EXPLORER,global-metadata.dat,ExplorationSystem,ExplorationSystem,MEDIUM,Found string hit

@@ -1,0 +1,13 @@
+[
+    {
+        "id": "BuildHut",
+        "name": "Build Hut",
+        "source": "prototype_fallback",
+        "confidence": "LOW",
+        "symbolEvidence": "Fallback task logic used to simulate OccupantsBuildingUI",
+        "behaviorEvidence": "UNKNOWN",
+        "balanceEvidence": "PROTOTYPE_FALLBACK",
+        "decodedValueSource": "UNKNOWN",
+        "fidelityLabel": "PROTOTYPE_FALLBACK"
+    }
+]

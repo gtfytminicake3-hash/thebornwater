@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8989633337678418360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6143460929127167884}
+  - component: {fileID: 1482654441996134503}
+  m_Layer: 0
+  m_Name: AnimationRegistryPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6143460929127167884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989633337678418360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1482654441996134503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8989633337678418360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f486c82f75cbbd4ca40ba4433b08aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TheBonwater.Rebuild.AnimationRegistry
+  entries:
+  - key: villager_idle
+    clip: {fileID: 7400000, guid: 28e7ddd8c141670459f91a0e0461f0a4, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager_walk
+    clip: {fileID: 7400000, guid: 6f151f594cfb0c14b8e5a30641fd50b3, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager_work
+    clip: {fileID: 7400000, guid: 1dc6fca20990b894fb8cc7e8ec802148, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager_build
+    clip: {fileID: 7400000, guid: 1dc6fca20990b894fb8cc7e8ec802148, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager_guard
+    clip: {fileID: 7400000, guid: 28e7ddd8c141670459f91a0e0461f0a4, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster_idle
+    clip: {fileID: 7400000, guid: b8e32caf4ac2b494e9d8805558eda32c, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster_attack
+    clip: {fileID: 7400000, guid: 9d26b42844b311540b7edc524c572405, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.idle
+    clip: {fileID: 7400000, guid: 28e7ddd8c141670459f91a0e0461f0a4, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.walk
+    clip: {fileID: 7400000, guid: 6f151f594cfb0c14b8e5a30641fd50b3, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.work
+    clip: {fileID: 7400000, guid: 1dc6fca20990b894fb8cc7e8ec802148, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.construction
+    clip: {fileID: 7400000, guid: 1dc6fca20990b894fb8cc7e8ec802148, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.guard
+    clip: {fileID: 7400000, guid: 28e7ddd8c141670459f91a0e0461f0a4, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.takeDamage
+    clip: {fileID: 7400000, guid: cc2c601a893c1a645825b7ac23563d7f, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: villager.death
+    clip: {fileID: 7400000, guid: 45ca49d2656cc584da3d9c03be1d5a53, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster.idle
+    clip: {fileID: 7400000, guid: b8e32caf4ac2b494e9d8805558eda32c, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster.walk
+    clip: {fileID: 7400000, guid: 965e6d582f2c5914592c1dddb2b00add, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster.attack
+    clip: {fileID: 7400000, guid: 9d26b42844b311540b7edc524c572405, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1
+  - key: monster.death
+    clip: {fileID: 7400000, guid: 74a529ac79499314d8d288c6ae276bf0, type: 2}
+    isSpriteRendererClip: 0
+    isLegacy: 1

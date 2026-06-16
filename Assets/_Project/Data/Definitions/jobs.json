@@ -1,0 +1,42 @@
+[
+  {
+    "id": "forager",
+    "displayName": "Forager",
+    "assetKey": "villagerFemale",
+    "animationKey": "villager_work",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  },
+  {
+    "id": "builder",
+    "displayName": "Builder",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_build",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  },
+  {
+    "id": "woodcutter",
+    "displayName": "Woodcutter",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_work",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  },
+  {
+    "id": "guard",
+    "displayName": "Guard",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_guard",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  },
+  {
+    "id": "idle",
+    "displayName": "Idle",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_idle",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  }
+]

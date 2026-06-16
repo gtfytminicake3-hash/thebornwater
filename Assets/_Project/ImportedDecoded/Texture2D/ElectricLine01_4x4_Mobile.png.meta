@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: fce017267d7950c46b2a0425efd94a77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7380498046184233481
+    second: ElectricLine01_4x4_Mobile_0
+  - first:
+      213: 4518679815771156841
+    second: ElectricLine01_4x4_Mobile_1
+  - first:
+      213: 3647187738563940063
+    second: ElectricLine01_4x4_Mobile_2
+  - first:
+      213: 3371703624818569269
+    second: ElectricLine01_4x4_Mobile_3
+  - first:
+      213: -8234769131089038876
+    second: ElectricLine01_4x4_Mobile_4
+  - first:
+      213: -2419220083664767367
+    second: ElectricLine01_4x4_Mobile_5
+  - first:
+      213: -8209320382703466733
+    second: ElectricLine01_4x4_Mobile_6
+  - first:
+      213: 6098785922387869679
+    second: ElectricLine01_4x4_Mobile_7
+  - first:
+      213: -9063469683785402174
+    second: ElectricLine01_4x4_Mobile_8
+  - first:
+      213: -5239152210768903097
+    second: ElectricLine01_4x4_Mobile_9
+  - first:
+      213: 4505704197976921357
+    second: ElectricLine01_4x4_Mobile_10
+  - first:
+      213: 6792819319360768781
+    second: ElectricLine01_4x4_Mobile_11
+  - first:
+      213: 1999686309375624051
+    second: ElectricLine01_4x4_Mobile_12
+  - first:
+      213: 3777900755859121105
+    second: ElectricLine01_4x4_Mobile_13
+  - first:
+      213: -3262902653427151976
+    second: ElectricLine01_4x4_Mobile_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a96449edbcc6660800000000000000
+      internalID: 7380498046184233481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 415
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96174c8f95395be30800000000000000
+      internalID: 4518679815771156841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 435
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde8342bce96d9230800000000000000
+      internalID: 3647187738563940063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 431
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530353d2592bace20800000000000000
+      internalID: 3371703624818569269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1f51eda1938bd80800000000000000
+      internalID: -8234769131089038876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 303
+        width: 98
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976bba7c6243d6ed0800000000000000
+      internalID: -2419220083664767367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 307
+        width: 110
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31706955b92a21e80800000000000000
+      internalID: -8209320382703466733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_7
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 303
+        width: 126
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feff411db7d33a450800000000000000
+      internalID: 6098785922387869679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 129
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8f279c756183280800000000000000
+      internalID: -9063469683785402174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 175
+        width: 122
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744cae092daca47b0800000000000000
+      internalID: -5239152210768903097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_10
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 171
+        width: 98
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d059667881a778e30800000000000000
+      internalID: 4505704197976921357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_11
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 171
+        width: 93
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bc8e95e21f44e50800000000000000
+      internalID: 6792819319360768781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_12
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 39
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373cb848a1050cb10800000000000000
+      internalID: 1999686309375624051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 39
+        width: 82
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3a9a5a8bccd6430800000000000000
+      internalID: 3777900755859121105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricLine01_4x4_Mobile_14
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 31
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b8bc50357d7b2d0800000000000000
+      internalID: -3262902653427151976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ElectricLine01_4x4_Mobile_0: 7380498046184233481
+      ElectricLine01_4x4_Mobile_1: 4518679815771156841
+      ElectricLine01_4x4_Mobile_10: 4505704197976921357
+      ElectricLine01_4x4_Mobile_11: 6792819319360768781
+      ElectricLine01_4x4_Mobile_12: 1999686309375624051
+      ElectricLine01_4x4_Mobile_13: 3777900755859121105
+      ElectricLine01_4x4_Mobile_14: -3262902653427151976
+      ElectricLine01_4x4_Mobile_2: 3647187738563940063
+      ElectricLine01_4x4_Mobile_3: 3371703624818569269
+      ElectricLine01_4x4_Mobile_4: -8234769131089038876
+      ElectricLine01_4x4_Mobile_5: -2419220083664767367
+      ElectricLine01_4x4_Mobile_6: -8209320382703466733
+      ElectricLine01_4x4_Mobile_7: 6098785922387869679
+      ElectricLine01_4x4_Mobile_8: -9063469683785402174
+      ElectricLine01_4x4_Mobile_9: -5239152210768903097
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

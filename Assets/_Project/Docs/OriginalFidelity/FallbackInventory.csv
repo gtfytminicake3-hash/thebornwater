@@ -1,0 +1,18 @@
+feature,current_behavior,evidence_source,evidence_symbol_or_asset,classification,confidence,keep_in_fidelity_mode,notes
++10 WOOD button,Instant +10 Wood,N/A,N/A,DEBUG_ONLY,HIGH,NO,Debug UI for testing only
+ASSIGN WORKER behavior,Cycles through all jobs sequentially per click,N/A,N/A,PROTOTYPE_FALLBACK,HIGH,NO,Original UI likely uses a popup or job management screen
+Build Hut,Instant completion,dump.cs.txt,HutBuilding/BuildingInstance/UpdateConstruction,PROTOTYPE_FALLBACK,HIGH,NO,Original requires resources deposited and builder AIAgent adding labor
+Build Storage,Instant completion,dump.cs.txt,ResourceStorageBuilding,PROTOTYPE_FALLBACK,HIGH,NO,Same construction logic as Hut
+Build GuardTower,Instant completion,dump.cs.txt,GuardTower,PROTOTYPE_FALLBACK,HIGH,NO,Same construction logic as Hut
+Time advance,Instant phase switch button,N/A,N/A,DEBUG_ONLY,HIGH,NO,Original uses DayNightController with real-time ticks
+Food upkeep,Eaten at end of day,dump.cs.txt,Villager/CharacterManager/Food,DECODE_EVIDENCE_PARTIAL,MEDIUM,YES,Original likely has continuous hunger or morning meal logic
+Starvation HP damage,HP drops if no food,dump.cs.txt,HP/Damage,DECODE_EVIDENCE_PARTIAL,LOW,YES,Original logic exact numbers unknown
+Raid chance,Fixed % per night,dump.cs.txt,MonsterManager/DayNightController,DECODE_EVIDENCE_PARTIAL,LOW,YES,Original logic unknown
+Force Raid,Button forcing 100% raid chance,N/A,N/A,DEBUG_ONLY,HIGH,NO,Testing tool
+SmallMonster,Enemy unit,dump.cs.txt,SmallMonster/SpawnTitan,ORIGINAL_CONFIRMED,HIGH,YES,Symbol exists
+Guard defense,Reduces raid damage,dump.cs.txt,GuardTower/JobData,DECODE_EVIDENCE_PARTIAL,LOW,YES,Exact mitigation formula unknown
+GuardTower defense,Adds global defense,dump.cs.txt,GuardTower,DECODE_EVIDENCE_PARTIAL,LOW,YES,Exact formula unknown
+Objective Day 3 + 2 Huts,Simple UI conditions,N/A,N/A,PROTOTYPE_FALLBACK,HIGH,NO,Placeholder objectives
+Save/Load,JsonUtility full snapshot,dump.cs.txt,SaveManager,PROTOTYPE_FALLBACK,HIGH,NO,Original uses binary or specific serialized chunks
+Resource production,Fixed +N per phase,dump.cs.txt,ResourceProductionBuilding,PROTOTYPE_FALLBACK,LOW,NO,Original uses actual worker simulation and walking
+Construction progress,Currently instant (0 -> 100),dump.cs.txt,BuildingInstance.UpdateConstruction,PROTOTYPE_FALLBACK,HIGH,NO,Original uses labor points

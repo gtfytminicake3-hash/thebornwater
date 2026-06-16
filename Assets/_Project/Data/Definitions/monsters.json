@@ -1,0 +1,12 @@
+[
+  {
+    "id": "smallMonster",
+    "displayName": "Small Monster",
+    "assetKey": "SmallMonster",
+    "animationKey": "monster_idle",
+    "hp": 100,
+    "attack": 10,
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  }
+]

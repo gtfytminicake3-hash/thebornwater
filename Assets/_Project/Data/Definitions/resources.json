@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wood",
+    "displayName": "Wood",
+    "assetKey": "wood",
+    "animationKey": null,
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": [],
+    "initialAmount": 50,
+    "capacity": 100
+  },
+  {
+    "id": "food",
+    "displayName": "Food",
+    "assetKey": "wood",
+    "animationKey": null,
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": [],
+    "initialAmount": 50,
+    "capacity": 100
+  },
+  {
+    "id": "iron",
+    "displayName": "Iron",
+    "assetKey": "rock",
+    "animationKey": null,
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": [],
+    "initialAmount": 0,
+    "capacity": 50
+  }
+]

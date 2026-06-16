@@ -1,0 +1,15 @@
+{
+    "foodConsumptionPerVillagerPerDay": 5,
+    "starvationHpDamagePerDay": 10,
+    "raidChanceAtNight": 0.5,
+    "woodPenaltyOnUnblockedRaid": 10,
+    "objectiveSurviveDay": 3,
+    "objectiveRequiredHuts": 2,
+    "source": "prototype_fallback",
+    "confidence": "LOW",
+    "evidence": "Manually balanced based on prototype gameplay loop since ScriptableObjects are not extracted yet.",
+    "decodedValueSource": "Il2CppDump field/schema",
+    "fidelityLabel": "DECODE_EVIDENCE_PARTIAL",
+    "valueConfidence": "LOW",
+    "notes": "field exists in dump; numeric value fallback"
+}

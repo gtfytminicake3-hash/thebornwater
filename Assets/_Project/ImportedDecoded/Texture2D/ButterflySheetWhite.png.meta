@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: ac00dc843b3ed1c46af64ea8016479f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4094849491287958706
+    second: ButterflySheetWhite_0
+  - first:
+      213: -7330883226529023828
+    second: ButterflySheetWhite_1
+  - first:
+      213: -4742564534102782506
+    second: ButterflySheetWhite_2
+  - first:
+      213: 5505080611278669663
+    second: ButterflySheetWhite_3
+  - first:
+      213: 7878629740753955113
+    second: ButterflySheetWhite_4
+  - first:
+      213: 6754463183898550106
+    second: ButterflySheetWhite_5
+  - first:
+      213: 5953864253987597505
+    second: ButterflySheetWhite_6
+  - first:
+      213: 5069667725131026273
+    second: ButterflySheetWhite_7
+  - first:
+      213: 5671952520331664468
+    second: ButterflySheetWhite_8
+  - first:
+      213: -8297699338905915258
+    second: ButterflySheetWhite_9
+  - first:
+      213: 5295910114779696041
+    second: ButterflySheetWhite_10
+  - first:
+      213: -4683723367261655156
+    second: ButterflySheetWhite_11
+  - first:
+      213: 8106421642271775800
+    second: ButterflySheetWhite_12
+  - first:
+      213: -207173333726378961
+    second: ButterflySheetWhite_13
+  - first:
+      213: 5272292062703789090
+    second: ButterflySheetWhite_14
+  - first:
+      213: -7030590398373036811
+    second: ButterflySheetWhite_15
+  - first:
+      213: 5055493729248500174
+    second: ButterflySheetWhite_16
+  - first:
+      213: 5620087969764417015
+    second: ButterflySheetWhite_17
+  - first:
+      213: -1975498671625696377
+    second: ButterflySheetWhite_18
+  - first:
+      213: 8241406772336125875
+    second: ButterflySheetWhite_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButterflySheetWhite_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 206
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b468e8bae3d3d830800000000000000
+      internalID: 4094849491287958706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 206
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca83ed0db88734a90800000000000000
+      internalID: -7330883226529023828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 207
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd0074fea60f2eb0800000000000000
+      internalID: -4742564534102782506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 209
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57c72716a9f56c40800000000000000
+      internalID: 5505080611278669663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 211
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929a776a104865d60800000000000000
+      internalID: 7878629740753955113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 149
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f1ab4aa7cacbd50800000000000000
+      internalID: 6754463183898550106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 150
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cca3db7eff50a250800000000000000
+      internalID: 5953864253987597505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 150
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f82bd8fe31b5640800000000000000
+      internalID: 5069667725131026273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 151
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c104514c2d6be40800000000000000
+      internalID: 5671952520331664468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 151
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680f4831a66a8dc80800000000000000
+      internalID: -8297699338905915258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 86
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab87d1c03ade7940800000000000000
+      internalID: 5295910114779696041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 86
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f2c24b962100fb0800000000000000
+      internalID: -4683723367261655156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 86
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cd523b88bcf7070800000000000000
+      internalID: 8106421642271775800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_13
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 85
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f244e4c53f8ff1df0800000000000000
+      internalID: -207173333726378961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_14
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 84
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224229d72b1fa2940800000000000000
+      internalID: 5272292062703789090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 19
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcf3b748435e6e90800000000000000
+      internalID: -7030590398373036811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 17
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec95218f2c8b82640800000000000000
+      internalID: 5055493729248500174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 15
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd11446b309efd40800000000000000
+      internalID: 5620087969764417015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_18
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 14
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b8e7fbc6e9594e0800000000000000
+      internalID: -1975498671625696377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButterflySheetWhite_19
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 14
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7e79a6bcb5f5270800000000000000
+      internalID: 8241406772336125875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ButterflySheetWhite_0: 4094849491287958706
+      ButterflySheetWhite_1: -7330883226529023828
+      ButterflySheetWhite_10: 5295910114779696041
+      ButterflySheetWhite_11: -4683723367261655156
+      ButterflySheetWhite_12: 8106421642271775800
+      ButterflySheetWhite_13: -207173333726378961
+      ButterflySheetWhite_14: 5272292062703789090
+      ButterflySheetWhite_15: -7030590398373036811
+      ButterflySheetWhite_16: 5055493729248500174
+      ButterflySheetWhite_17: 5620087969764417015
+      ButterflySheetWhite_18: -1975498671625696377
+      ButterflySheetWhite_19: 8241406772336125875
+      ButterflySheetWhite_2: -4742564534102782506
+      ButterflySheetWhite_3: 5505080611278669663
+      ButterflySheetWhite_4: 7878629740753955113
+      ButterflySheetWhite_5: 6754463183898550106
+      ButterflySheetWhite_6: 5953864253987597505
+      ButterflySheetWhite_7: 5069667725131026273
+      ButterflySheetWhite_8: 5671952520331664468
+      ButterflySheetWhite_9: -8297699338905915258
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

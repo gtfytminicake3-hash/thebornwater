@@ -1,0 +1,4 @@
+system,className,objectPathId,objectName,fieldName,candidateValue,valueType,byteOffset,confidence,status,evidence,notes
+Various,GuardTower,37648,Instance_of_GuardTower,UnknownField,5093,int,4,LOW,REJECTED_LOW_CONFIDENCE,Naive 4-byte int scan without alignment,Cannot map offset to field name without TypeTree
+Various,GuardTower,37648,Instance_of_GuardTower,UnknownField,1,int,12,LOW,REJECTED_LOW_CONFIDENCE,Naive 4-byte int scan without alignment,Cannot map offset to field name without TypeTree
+Various,GuardTower,37648,Instance_of_GuardTower,UnknownField,1,int,16,LOW,REJECTED_LOW_CONFIDENCE,Naive 4-byte int scan without alignment,Cannot map offset to field name without TypeTree

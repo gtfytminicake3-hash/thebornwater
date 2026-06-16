@@ -1,0 +1,14 @@
+role,asset_path,evidence_status,notes
+sky,Assets/_Project/ImportedDecoded/Texture2D/Blue Sky.png,DECODE_EVIDENCE_PARTIAL,Game original Blue Sky texture used as sky layer
+scene_bg,Assets/_Project/ImportedDecoded/Texture2D/BG_Beach.png,DECODE_EVIDENCE_PARTIAL / WRONG_ROLE_SUSPECTED,Beach BG used as scene background; correct town background not yet confirmed
+terrain,Assets/_Project/ImportedDecoded/Texture2D/ForestFloor.png,DECODE_EVIDENCE_PARTIAL,Forest floor texture; used as terrain ground line
+bonfire,Assets/_Project/ImportedDecoded/Texture2D/bonfire.png,DECODE_EVIDENCE_PARTIAL,Game original bonfire sprite
+hut,Assets/_Project/ImportedDecoded/Texture2D/hut.png,DECODE_EVIDENCE_PARTIAL,Game original hut sprite
+house,Assets/_Project/ImportedDecoded/Texture2D/house.png,DECODE_EVIDENCE_PARTIAL,Game original house sprite
+tower,Assets/_Project/ImportedDecoded/Texture2D/guardTower.png,DECODE_EVIDENCE_PARTIAL,Game original guard tower sprite
+tree,Assets/_Project/ImportedDecoded/Texture2D/tree.png,DECODE_EVIDENCE_PARTIAL,Game original tree sprite
+wood_node,Assets/_Project/ImportedDecoded/Texture2D/wood.png,DECODE_EVIDENCE_PARTIAL,Game original wood resource sprite
+man,Assets/_Project/ImportedDecoded/Texture2D/man 1.png,DECODE_EVIDENCE_PARTIAL,Villager male sprite
+menu_bg,Assets/_Project/ImportedDecoded/Sprite/1st cutsceneBG.png,DECODE_EVIDENCE_PARTIAL,MainMenu cutscene background (Sprite folder)
+menu_bg_monk,Assets/_Project/ImportedDecoded/Sprite/1st cutscene MONK.png,DECODE_EVIDENCE_PARTIAL,MainMenu cutscene monk sprite
+menu_bg_table,Assets/_Project/ImportedDecoded/Sprite/1st cutsceneTable.png,DECODE_EVIDENCE_PARTIAL,MainMenu cutscene table sprite

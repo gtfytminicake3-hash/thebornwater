@@ -1,0 +1,3 @@
+asset_id,source_path,type,category,import_status,used_in_scene,replacement_strategy,note
+logo_main,,Sprite,UI,Pending,MainMenuScene,Placeholder,
+icon_wood,,Sprite,UI,Pending,TownScene,Placeholder,\n

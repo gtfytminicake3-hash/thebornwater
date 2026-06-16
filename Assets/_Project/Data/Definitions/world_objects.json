@@ -1,0 +1,15 @@
+{
+  "objects": [
+    {
+      "id": "bonfire",
+      "displayName": "Bonfire",
+      "assetKey": "bonfire",
+      "animationKey": null,
+      "status": "DECODE_BLUEPRINT_PARTIAL",
+      "sourceEvidence": [
+        "il2cpp: BonfireBuilding",
+        "asset: bonfire.png"
+      ]
+    }
+  ]
+}

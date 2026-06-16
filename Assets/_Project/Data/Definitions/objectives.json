@@ -1,0 +1,13 @@
+[
+  {
+    "id": "survive_day_3",
+    "displayName": "Survive Day 3 and build 2 huts",
+    "targetDay": 3,
+    "targetHutCount": 2,
+    "source": "prototype_fallback",
+    "confidence": "LOW",
+    "symbolEvidence": "Objective defined in early prototype",
+    "behaviorEvidence": "UNKNOWN",
+    "balanceEvidence": "PROTOTYPE_FALLBACK"
+  }
+]

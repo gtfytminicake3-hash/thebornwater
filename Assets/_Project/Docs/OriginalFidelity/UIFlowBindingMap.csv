@@ -1,0 +1,3 @@
+flowName,userAction,scene,panel,backendCommand,backendStateRead,status,fidelityLabel,notes
+StartNewGame,Click New Game,MainMenuScene,MainPanel,N/A,N/A,IMPLEMENTED,TEMPORARY_DEV_UI,Re-initializes state
+BuildHut,Click Build Hut,TownScene,ActionPanel,BuildHutCommand,tasks,IMPLEMENTED,TEMPORARY_DEV_UI,

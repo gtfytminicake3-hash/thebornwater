@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 03552e12941d83047b1803d51a340f85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5316520314733807093
+    second: WhiteShockwave01_4x4_Mobile_0
+  - first:
+      213: 6429301836576571496
+    second: WhiteShockwave01_4x4_Mobile_1
+  - first:
+      213: -2257453036944447127
+    second: WhiteShockwave01_4x4_Mobile_2
+  - first:
+      213: 3627855267632854187
+    second: WhiteShockwave01_4x4_Mobile_3
+  - first:
+      213: 5363511340365665782
+    second: WhiteShockwave01_4x4_Mobile_4
+  - first:
+      213: 967927199712326207
+    second: WhiteShockwave01_4x4_Mobile_5
+  - first:
+      213: 5844794808553539175
+    second: WhiteShockwave01_4x4_Mobile_6
+  - first:
+      213: -4502904680146887634
+    second: WhiteShockwave01_4x4_Mobile_7
+  - first:
+      213: 8703888766303498889
+    second: WhiteShockwave01_4x4_Mobile_8
+  - first:
+      213: -7259262700965206903
+    second: WhiteShockwave01_4x4_Mobile_9
+  - first:
+      213: 2272372616518535932
+    second: WhiteShockwave01_4x4_Mobile_10
+  - first:
+      213: -6078572470781179772
+    second: WhiteShockwave01_4x4_Mobile_11
+  - first:
+      213: -4427350331148318544
+    second: WhiteShockwave01_4x4_Mobile_12
+  - first:
+      213: 6680772509882416659
+    second: WhiteShockwave01_4x4_Mobile_13
+  - first:
+      213: -5494435011358281744
+    second: WhiteShockwave01_4x4_Mobile_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 423
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f54bd0ee0318c940800000000000000
+      internalID: 5316520314733807093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 419
+        width: 54
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860c9ead4f7793950800000000000000
+      internalID: 6429301836576571496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 415
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969acc36c6aeba0e0800000000000000
+      internalID: -2257453036944447127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 415
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba439cb052bb85230800000000000000
+      internalID: 3627855267632854187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 283
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5564f95250f6a40800000000000000
+      internalID: 5363511340365665782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 279
+        width: 78
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32ba4be8a4ce6d00800000000000000
+      internalID: 967927199712326207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 279
+        width: 82
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76681ec49e1ec1150800000000000000
+      internalID: 5844794808553539175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 275
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c96620d087281c0800000000000000
+      internalID: -4502904680146887634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 143
+        width: 90
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9827800c7bc6ac870800000000000000
+      internalID: 8703888766303498889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 139
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984e9b1e80be14b90800000000000000
+      internalID: -7259262700965206903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 139
+        width: 106
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa89ecead6198f10800000000000000
+      internalID: 2272372616518535932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_11
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 135
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4888e912b8294aba0800000000000000
+      internalID: -6078572470781179772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b842b7b454ee82c0800000000000000
+      internalID: -4427350331148318544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e7cb4933fd6bc50800000000000000
+      internalID: 6680772509882416659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteShockwave01_4x4_Mobile_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 254
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff258ac778dfb3b0800000000000000
+      internalID: -5494435011358281744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WhiteShockwave01_4x4_Mobile_0: 5316520314733807093
+      WhiteShockwave01_4x4_Mobile_1: 6429301836576571496
+      WhiteShockwave01_4x4_Mobile_10: 2272372616518535932
+      WhiteShockwave01_4x4_Mobile_11: -6078572470781179772
+      WhiteShockwave01_4x4_Mobile_12: -4427350331148318544
+      WhiteShockwave01_4x4_Mobile_13: 6680772509882416659
+      WhiteShockwave01_4x4_Mobile_14: -5494435011358281744
+      WhiteShockwave01_4x4_Mobile_2: -2257453036944447127
+      WhiteShockwave01_4x4_Mobile_3: 3627855267632854187
+      WhiteShockwave01_4x4_Mobile_4: 5363511340365665782
+      WhiteShockwave01_4x4_Mobile_5: 967927199712326207
+      WhiteShockwave01_4x4_Mobile_6: 5844794808553539175
+      WhiteShockwave01_4x4_Mobile_7: -4502904680146887634
+      WhiteShockwave01_4x4_Mobile_8: 8703888766303498889
+      WhiteShockwave01_4x4_Mobile_9: -7259262700965206903
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 2a359e27dff15274493c3b2e5e04e843
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2478284660111574561
+    second: Monk 1 Hands_0
+  - first:
+      213: -4811500569537416794
+    second: Monk 1 Hands_1
+  - first:
+      213: -6077940944588669626
+    second: Monk 1 Hands_2
+  - first:
+      213: 7367604825818164428
+    second: Monk 1 Hands_3
+  - first:
+      213: -1234674724922142740
+    second: Monk 1 Hands_4
+  - first:
+      213: -2549924879116644178
+    second: Monk 1 Hands_5
+  - first:
+      213: 7272944395712540541
+    second: Monk 1 Hands_6
+  - first:
+      213: -4613982540265970606
+    second: Monk 1 Hands_7
+  - first:
+      213: -4012536408669122808
+    second: Monk 1 Hands_8
+  - first:
+      213: 2924643209336009963
+    second: Monk 1 Hands_9
+  - first:
+      213: 8193206487258678350
+    second: Monk 1 Hands_10
+  - first:
+      213: -7665472790305242610
+    second: Monk 1 Hands_11
+  - first:
+      213: 9001180796998732335
+    second: Monk 1 Hands_12
+  - first:
+      213: -2519260076075186864
+    second: Monk 1 Hands_13
+  - first:
+      213: 401033452556058589
+    second: Monk 1 Hands_14
+  - first:
+      213: -6430107212337236898
+    second: Monk 1 Hands_15
+  - first:
+      213: 5498793476866293065
+    second: Monk 1 Hands_16
+  - first:
+      213: 5781333835754714499
+    second: Monk 1 Hands_17
+  - first:
+      213: 3371210262225800751
+    second: Monk 1 Hands_18
+  - first:
+      213: -7500512489834824642
+    second: Monk 1 Hands_19
+  - first:
+      213: -1547807229017639952
+    second: Monk 1 Hands_20
+  - first:
+      213: 8677081414121632820
+    second: Monk 1 Hands_21
+  - first:
+      213: 2873770386424388169
+    second: Monk 1 Hands_22
+  - first:
+      213: 1239792737803207783
+    second: Monk 1 Hands_23
+  - first:
+      213: 1378898523933506264
+    second: Monk 1 Hands_24
+  - first:
+      213: -8677252545691466769
+    second: Monk 1 Hands_25
+  - first:
+      213: 5406758395735567845
+    second: Monk 1 Hands_26
+  - first:
+      213: -351239753603727469
+    second: Monk 1 Hands_27
+  - first:
+      213: -3815198417850941142
+    second: Monk 1 Hands_28
+  - first:
+      213: 400034762287175618
+    second: Monk 1 Hands_29
+  - first:
+      213: -7103758428032463392
+    second: Monk 1 Hands_30
+  - first:
+      213: 350979311417772508
+    second: Monk 1 Hands_31
+  - first:
+      213: 1660329122927713357
+    second: Monk 1 Hands_32
+  - first:
+      213: -7940054687413236323
+    second: Monk 1 Hands_33
+  - first:
+      213: 2895068283676625632
+    second: Monk 1 Hands_34
+  - first:
+      213: 8708851015884102407
+    second: Monk 1 Hands_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monk 1 Hands_0
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 571
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9ffbd6b3d5b9dd0800000000000000
+      internalID: -2478284660111574561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 563
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1f12479bd1a3db0800000000000000
+      internalID: -4811500569537416794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_2
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 563
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d7df7c9e0d6aba0800000000000000
+      internalID: -6077940944588669626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_3
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 563
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc6858cd8dfe3660800000000000000
+      internalID: 7367604825818164428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 555
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefccd711ed8ddee0800000000000000
+      internalID: -1234674724922142740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 547
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0525025d8dc9cd0800000000000000
+      internalID: -2549924879116644178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_6
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 543
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f2d99e460bee460800000000000000
+      internalID: 7272944395712540541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_7
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 547
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254a7975357d7ffb0800000000000000
+      internalID: -4613982540265970606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 547
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f84f8456b9058c0800000000000000
+      internalID: -4012536408669122808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_9
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 543
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be43b33e08b669820800000000000000
+      internalID: 2924643209336009963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_10
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 539
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44ca7404ed14b170800000000000000
+      internalID: 8193206487258678350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 531
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e020f625c15ce9590800000000000000
+      internalID: -7665472790305242610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_12
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 539
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a4d2c9e3e9aec70800000000000000
+      internalID: 9001180796998732335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 523
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05507b4fe4ac90dd0800000000000000
+      internalID: -2519260076075186864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 527
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddff6a2ecc1c09500800000000000000
+      internalID: 401033452556058589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 531
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5436fcfe8ba3c6a0800000000000000
+      internalID: -6430107212337236898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_16
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 531
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94db9d98883af4c40800000000000000
+      internalID: 5498793476866293065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 531
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3853b182e7c6b3050800000000000000
+      internalID: 5781333835754714499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_18
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 523
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ece1f3fd1f8ce20800000000000000
+      internalID: 3371210262225800751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_19
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 515
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cb30241a3d8e790800000000000000
+      internalID: -7500512489834824642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_20
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 515
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f33f9d9685158ae0800000000000000
+      internalID: -1547807229017639952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_21
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 491
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4343ddfa29f2b6870800000000000000
+      internalID: 8677081414121632820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_22
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 495
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94adcd8c0fea1e720800000000000000
+      internalID: 2873770386424388169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_23
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 379
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7648ed32de0a43110800000000000000
+      internalID: 1239792737803207783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_24
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 371
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dafd5cd6e4d22310800000000000000
+      internalID: 1378898523933506264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_25
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 363
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3c4b3a8c4349780800000000000000
+      internalID: -8677252545691466769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_26
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 363
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eded2c5d1aa80b40800000000000000
+      internalID: 5406758395735567845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_27
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 371
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f34771e45202bf0800000000000000
+      internalID: -351239753603727469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_28
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 251
+        width: 62
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21cc54b041bd0bc0800000000000000
+      internalID: -3815198417850941142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_29
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 319
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c75fef2f753d8500800000000000000
+      internalID: 400034762287175618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_30
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed00f6d8516a6d90800000000000000
+      internalID: -7103758428032463392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 315
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9419cf2ddeed400800000000000000
+      internalID: 350979311417772508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_32
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 299
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c975e5a8caa0710800000000000000
+      internalID: 1660329122927713357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 709
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d0f8b74524fc190800000000000000
+      internalID: -7940054687413236323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_34
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 291
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea8b09e3495d2820800000000000000
+      internalID: 2895068283676625632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monk 1 Hands_35
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b52938bdd0cd870800000000000000
+      internalID: 8708851015884102407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Monk 1 Hands_0: -2478284660111574561
+      Monk 1 Hands_1: -4811500569537416794
+      Monk 1 Hands_10: 8193206487258678350
+      Monk 1 Hands_11: -7665472790305242610
+      Monk 1 Hands_12: 9001180796998732335
+      Monk 1 Hands_13: -2519260076075186864
+      Monk 1 Hands_14: 401033452556058589
+      Monk 1 Hands_15: -6430107212337236898
+      Monk 1 Hands_16: 5498793476866293065
+      Monk 1 Hands_17: 5781333835754714499
+      Monk 1 Hands_18: 3371210262225800751
+      Monk 1 Hands_19: -7500512489834824642
+      Monk 1 Hands_2: -6077940944588669626
+      Monk 1 Hands_20: -1547807229017639952
+      Monk 1 Hands_21: 8677081414121632820
+      Monk 1 Hands_22: 2873770386424388169
+      Monk 1 Hands_23: 1239792737803207783
+      Monk 1 Hands_24: 1378898523933506264
+      Monk 1 Hands_25: -8677252545691466769
+      Monk 1 Hands_26: 5406758395735567845
+      Monk 1 Hands_27: -351239753603727469
+      Monk 1 Hands_28: -3815198417850941142
+      Monk 1 Hands_29: 400034762287175618
+      Monk 1 Hands_3: 7367604825818164428
+      Monk 1 Hands_30: -7103758428032463392
+      Monk 1 Hands_31: 350979311417772508
+      Monk 1 Hands_32: 1660329122927713357
+      Monk 1 Hands_33: -7940054687413236323
+      Monk 1 Hands_34: 2895068283676625632
+      Monk 1 Hands_35: 8708851015884102407
+      Monk 1 Hands_4: -1234674724922142740
+      Monk 1 Hands_5: -2549924879116644178
+      Monk 1 Hands_6: 7272944395712540541
+      Monk 1 Hands_7: -4613982540265970606
+      Monk 1 Hands_8: -4012536408669122808
+      Monk 1 Hands_9: 2924643209336009963
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

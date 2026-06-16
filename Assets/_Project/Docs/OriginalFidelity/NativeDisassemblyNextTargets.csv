@@ -1,0 +1,6 @@
+priority,system,className,methodName,addressOrRVA,expectedData,whyThisMethod,nextRequiredTool,status,notes
+HIGH,Building,BuildingDetails,.ctor,0x0000000,"Default balance values (labour, cost)",Constructors often initialize hardcoded defaults,IDA/Ghidra,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY_TOOL,
+HIGH,Building,BuildingData,.ctor,0x0000000,List of buildings,Initialization of singleton data,IDA/Ghidra,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY_TOOL,
+HIGH,Resource,ResourceData,.ctor,0x0000000,Capacity values,Initialization of resources,IDA/Ghidra,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY_TOOL,
+HIGH,Job,JobData,.ctor,0x0000000,Production numbers,Initialization of jobs,IDA/Ghidra,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY_TOOL,
+HIGH,Combat,MonsterManager,SpawnTitan,0x0000000,Raid chances,Logic for raid probability,IDA/Ghidra,BLOCKED_REQUIRES_NATIVE_DISASSEMBLY_TOOL,

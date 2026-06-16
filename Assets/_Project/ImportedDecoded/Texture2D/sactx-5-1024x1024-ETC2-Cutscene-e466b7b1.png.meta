@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 2ce224d576851fd47b7a788ae8fe4adc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 789308534637010512
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_0
+  - first:
+      213: 69171638484163683
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_1
+  - first:
+      213: -8760781674936296294
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_2
+  - first:
+      213: 6216038199579799336
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_3
+  - first:
+      213: 428128946302791478
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_4
+  - first:
+      213: 3427047046224579588
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_5
+  - first:
+      213: -5137515642141504795
+    second: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 513
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e19392eef24fa00800000000000000
+      internalID: 789308534637010512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 871
+        width: 677
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c516c1d3fb5f000800000000000000
+      internalID: 69171638484163683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 483
+        width: 368
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c9ba6bb737b6680800000000000000
+      internalID: -8760781674936296294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 1007
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f663cfecdc34650800000000000000
+      internalID: 6216038199579799336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_4
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 433
+        width: 431
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fa072220501f500800000000000000
+      internalID: 428128946302791478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c84ca91215f8f20800000000000000
+      internalID: 3427047046224579588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 512
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea84224eb0e3b8b0800000000000000
+      internalID: -5137515642141504795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_0: 789308534637010512
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_1: 69171638484163683
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_2: -8760781674936296294
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_3: 6216038199579799336
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_4: 428128946302791478
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_5: 3427047046224579588
+      sactx-5-1024x1024-ETC2-Cutscene-e466b7b1_6: -5137515642141504795
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

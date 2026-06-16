@@ -1,0 +1,25 @@
+{
+  "animations": {
+    "villager_idle": "Assets/_Project/ImportedDecoded/Animation/idle.anim",
+    "villager_walk": "Assets/_Project/ImportedDecoded/Animation/walk.anim",
+    "villager_work": "Assets/_Project/ImportedDecoded/Animation/Construction.anim",
+    "villager_build": "Assets/_Project/ImportedDecoded/Animation/Construction.anim",
+    "villager_guard": "Assets/_Project/ImportedDecoded/Animation/idle.anim",
+    "monster_idle": "Assets/_Project/ImportedDecoded/Animation/Spider_Idle.anim",
+    "monster_attack": "Assets/_Project/ImportedDecoded/Animation/Spider_Attack.anim",
+    "bonfire_loop": "UNKNOWN/FALLBACK",
+    
+    "villager.idle": "Assets/_Project/ImportedDecoded/Animation/idle.anim",
+    "villager.walk": "Assets/_Project/ImportedDecoded/Animation/walk.anim",
+    "villager.work": "Assets/_Project/ImportedDecoded/Animation/Construction.anim",
+    "villager.construction": "Assets/_Project/ImportedDecoded/Animation/Construction.anim",
+    "villager.guard": "Assets/_Project/ImportedDecoded/Animation/idle.anim",
+    "villager.takeDamage": "Assets/_Project/ImportedDecoded/Animation/takeDamage.anim",
+    "villager.death": "Assets/_Project/ImportedDecoded/Animation/Spider_Death 1.anim",
+    "monster.idle": "Assets/_Project/ImportedDecoded/Animation/Spider_Idle.anim",
+    "monster.walk": "Assets/_Project/ImportedDecoded/Animation/Spider_Walk.anim",
+    "monster.attack": "Assets/_Project/ImportedDecoded/Animation/Spider_Attack.anim",
+    "monster.death": "Assets/_Project/ImportedDecoded/Animation/Spider_Dead.anim",
+    "bonfire.loop": "UNKNOWN/FALLBACK"
+  }
+}
