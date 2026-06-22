@@ -10,6 +10,7 @@ namespace TheBonwater.Rebuild {
         public float moveSpeed = 100f;
         public RectTransform rectTransform;
         public string targetId = "";
+        private const bool DEBUG_AGENT = false;
         
         public Vector2 homePosition;
         public bool IsAtHome => Vector2.Distance(rectTransform.anchoredPosition, homePosition) <= 5f;
@@ -48,12 +49,12 @@ namespace TheBonwater.Rebuild {
                 currentTarget = target;
                 targetId = tId;
                 visualState = "Moving";
-                UnityEngine.Debug.Log($"[AGENT_MOVE] villager={villagerId} from={rectTransform.anchoredPosition} to={target}");
+                if (DEBUG_AGENT) UnityEngine.Debug.Log($"[AGENT_MOVE] villager={villagerId} from={rectTransform.anchoredPosition} to={target}");
             } else {
                 visualState = "Working";
                 if (targetId != tId) {
                     targetId = tId;
-                    UnityEngine.Debug.Log($"[AGENT_WORK] villager={villagerId} job={currentJob} target={targetId}");
+                    if (DEBUG_AGENT) UnityEngine.Debug.Log($"[AGENT_WORK] villager={villagerId} job={currentJob} target={targetId}");
                 }
             }
         }

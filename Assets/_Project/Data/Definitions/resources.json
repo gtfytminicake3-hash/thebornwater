@@ -28,5 +28,25 @@
     "sourceEvidence": [],
     "initialAmount": 0,
     "capacity": 50
+  },
+  {
+    "id": "steel",
+    "displayName": "Steel",
+    "assetKey": "rock",
+    "animationKey": null,
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Resource"],
+    "initialAmount": 0,
+    "capacity": 50
+  },
+  {
+    "id": "coal",
+    "displayName": "Coal",
+    "assetKey": "coal",
+    "animationKey": null,
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Resource.Coal"],
+    "initialAmount": 0,
+    "capacity": 50
   }
 ]

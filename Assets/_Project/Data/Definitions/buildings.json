@@ -63,5 +63,21 @@
     },
     "constructionRequired": 100,
     "constructionAssetKey": null
+  },
+  {
+    "id": "blacksmithsForge",
+    "displayName": "Blacksmith's Forge",
+    "assetKey": "blacksmith_forge",
+    "animationKey": null,
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": [
+      "Assembly-CSharp.decompiled.cs enum Building.Blacksmiths_Forge"
+    ],
+    "costs": {
+      "wood": 50,
+      "iron": 10
+    },
+    "constructionRequired": 100,
+    "constructionAssetKey": null
   }
 ]

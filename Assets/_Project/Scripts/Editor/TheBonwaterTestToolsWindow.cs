@@ -181,6 +181,37 @@ namespace TheBonwater.Rebuild.Editor {
                         TownInteractionController.Instance?.RefreshUI();
                     }
                 }
+
+                if (GUILayout.Button("Run Phase 7 E2E Completion Test")) {
+                    if (GameServiceLocator.Backend is LocalGameBackend lb) {
+                        var snap = lb.GetSnapshot();
+                        
+                        // Setup miner and wait for time
+                        if (snap.villagers.Count >= 2) {
+                            snap.villagers[0].job = "Miner";
+                            snap.villagers[1].job = "Woodcutter";
+                        }
+                        
+                        // Give lots of food to test recruitment
+                        snap.food = 100;
+                        
+                        // Build a hut to increase population
+                        lb.Execute(new BuildHutCommand());
+                        var hutTask = snap.tasks.FirstOrDefault(t => t.targetBuildingId == "hut");
+                        if (hutTask != null) {
+                            lb.DepositResource(hutTask.id);
+                            lb.UpdateConstruction(hutTask.id, 1000);
+                        }
+
+                        // Advance to Morning to trigger recruitment and objective check
+                        snap.timeOfDay = "Night";
+                        snap.day = 3;
+                        lb.Execute(new AdvanceTimeCommand()); // transitions to Day 3 Morning
+
+                        UnityEngine.Debug.Log("PHASE 7 E2E TEST: Miner set, Food added, Hut built. Time advanced to Morning. Check EventLog for Recruitment, HUD for Population, Iron increase, and Objective Victory.");
+                        TownInteractionController.Instance?.RefreshUI();
+                    }
+                }
             } else {
                 GUILayout.Label("Enter Play Mode to use these tools.");
             }

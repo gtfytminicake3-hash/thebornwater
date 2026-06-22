@@ -9,10 +9,14 @@
     { "id": "villager:v2", "x": 100, "y": -50, "scale": 1.0 }
   ],
   "objects": [
-    { "id": "scene_bg_1", "role": "terrain", "asset": "Assets/_Project/ImportedDecoded/Sprite/Background.png", "x": 0, "y": 0, "width": 3000, "height": 2000, "layer": 0, "preserveAspect": false, "fillScreen": true, "anchorBottom": true },
+    { "id": "scene_bg_1", "role": "terrain", "asset": "Assets/_Project/ImportedDecoded/Texture2D/map.png", "x": 0, "y": 0, "width": 3000, "height": 2000, "layer": 0, "preserveAspect": false, "fillScreen": true, "anchorBottom": true },
     { "id": "tree_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": -400, "y": 200, "width": 128, "height": 128, "layer": 1 },
     { "id": "tree_2", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": 300, "y": -100, "width": 128, "height": 128, "layer": 1 },
     { "id": "tree_3", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": -250, "y": -200, "width": 128, "height": 128, "layer": 1 },
-    { "id": "tree_4", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": 200, "y": 300, "width": 128, "height": 128, "layer": 1 }
+    { "id": "tree_4", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/tree.png", "x": 200, "y": 300, "width": 128, "height": 128, "layer": 1 },
+    { "id": "mine_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/ironMine.png", "x": -450, "y": 250, "width": 128, "height": 128, "layer": 1 },
+    { "id": "forage_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/bushes.png", "x": 400, "y": -150, "width": 128, "height": 128, "layer": 1 },
+    { "id": "coalMine_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/coalMine.png", "x": -650, "y": 250, "width": 128, "height": 128, "layer": 1 },
+    { "id": "farm_1", "role": "decoration", "asset": "Assets/_Project/ImportedDecoded/Sprite/farm.png", "x": 550, "y": 100, "width": 128, "height": 128, "layer": 1 }
   ]
 }

@@ -14,5 +14,26 @@
         "fidelityLabel": "DECODE_EVIDENCE_PARTIAL",
         "valueConfidence": "LOW",
         "notes": "field exists in dump; numeric value fallback"
+    },
+    {
+        "id": "Basic",
+        "displayName": "Goblin Raider",
+        "hp": 60,
+        "attack": 15,
+        "raidWeight": 1
+    },
+    {
+        "id": "Fast",
+        "displayName": "Feral Wolf",
+        "hp": 40,
+        "attack": 10,
+        "raidWeight": 1
+    },
+    {
+        "id": "Tank",
+        "displayName": "Orc Titan",
+        "hp": 120,
+        "attack": 25,
+        "raidWeight": 1
     }
 ]

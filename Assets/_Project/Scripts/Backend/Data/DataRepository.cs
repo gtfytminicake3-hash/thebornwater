@@ -13,6 +13,7 @@ namespace TheBonwater.Rebuild.Data
         public List<JobDefinition> Jobs { get; private set; } = new List<JobDefinition>();
         public List<BuildingDefinition> Buildings { get; private set; } = new List<BuildingDefinition>();
         public List<EnemyDefinition> Enemies { get; private set; } = new List<EnemyDefinition>();
+        public List<EquipmentDefinition> Equipment { get; private set; } = new List<EquipmentDefinition>();
         public BalanceDefinition Balance { get; private set; }
         public List<ObjectiveDefinition> Objectives { get; private set; } = new List<ObjectiveDefinition>();
         public AssetMapDefinition AssetMap { get; private set; }
@@ -65,6 +66,9 @@ namespace TheBonwater.Rebuild.Data
                 
                 string layoutJson = LoadJson("town_visual_layout.json");
                 if (layoutJson != null) VisualLayout = JsonConvert.DeserializeObject<TownVisualLayoutDefinition>(layoutJson, settings);
+
+                string equipJson = LoadJson("equipment.json");
+                if (equipJson != null) Equipment = JsonConvert.DeserializeObject<List<EquipmentDefinition>>(equipJson, settings) ?? new List<EquipmentDefinition>();
                 
                 ValidateDefinitions();
             }
@@ -88,5 +92,7 @@ namespace TheBonwater.Rebuild.Data
         public JobDefinition GetJob(string id) => Jobs.FirstOrDefault(j => j.id.Equals(id, StringComparison.OrdinalIgnoreCase));
         public BuildingDefinition GetBuilding(string id) => Buildings.FirstOrDefault(b => b.id.Equals(id, StringComparison.OrdinalIgnoreCase));
         public EnemyDefinition GetEnemy(string id) => Enemies.FirstOrDefault(e => e.id.Equals(id, StringComparison.OrdinalIgnoreCase));
+        public EquipmentDefinition GetEquipment(string id) => Equipment.FirstOrDefault(e => e.id.Equals(id, StringComparison.OrdinalIgnoreCase));
+        public IReadOnlyList<EquipmentDefinition> GetAllEquipment() => Equipment;
     }
 }

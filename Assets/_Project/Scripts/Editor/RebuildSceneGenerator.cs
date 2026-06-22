@@ -61,6 +61,12 @@ namespace TheBonwater.Rebuild.Editor
         [MenuItem("Tools/Rebuild/Create Town Scene")]
         public static void CreateScenes()
         {
+            // If current scene already has UI root, skip to preserve scene-owned layout
+            if (GameObject.Find("HUDRoot") != null || GameObject.Find("TownUIRoot") != null) {
+                UnityEngine.Debug.LogWarning("[Generator] Scene UI root already exists. To regenerate, delete HUDRoot/TownUIRoot from the current scene first. Scene-owned layout preserved.");
+                return;
+            }
+
             string basePath = "Assets/_Project/Scenes/";
             if (!AssetDatabase.IsValidFolder("Assets/_Project/Scenes"))
                 AssetDatabase.CreateFolder("Assets/_Project", "Scenes");
@@ -104,6 +110,29 @@ namespace TheBonwater.Rebuild.Editor
                 var layerRect = layerGo.AddComponent<RectTransform>();
                 layerRect.anchorMin = Vector2.zero; layerRect.anchorMax = Vector2.one; layerRect.sizeDelta = Vector2.zero;
             }
+
+            // Phase 10F: Create Worksites parent with scene-owned worksite objects
+            var worksitesGo = new GameObject("Worksites");
+            worksitesGo.transform.SetParent(worldRootGo.transform, false);
+            var worksitesRect = worksitesGo.AddComponent<RectTransform>();
+            worksitesRect.anchorMin = Vector2.zero; worksitesRect.anchorMax = Vector2.one; worksitesRect.sizeDelta = Vector2.zero;
+            
+            CreateSceneOwnedWorksite(worksitesGo.transform, "mine_1", "Miner", "ironMine", "Assets/_Project/ImportedDecoded/Sprite/ironMine.png", -450f, 250f);
+            CreateSceneOwnedWorksite(worksitesGo.transform, "forage_1", "Forager", "bushes", "Assets/_Project/ImportedDecoded/Sprite/bushes.png", 400f, -150f);
+            CreateSceneOwnedWorksite(worksitesGo.transform, "coalMine_1", "coalMiner", "coalMine", "Assets/_Project/ImportedDecoded/Sprite/coalMine.png", -650f, 250f);
+            CreateSceneOwnedWorksite(worksitesGo.transform, "farm_1", "Farmer", "farm", "Assets/_Project/ImportedDecoded/Sprite/farm.png", 550f, 100f);
+
+            // Phase 10G: Create SpawnPoints parent with scene-owned spawn slot objects
+            var spawnPointsGo = new GameObject("SpawnPoints");
+            spawnPointsGo.transform.SetParent(worldRootGo.transform, false);
+            var spawnPointsRect = spawnPointsGo.AddComponent<RectTransform>();
+            spawnPointsRect.anchorMin = Vector2.zero; spawnPointsRect.anchorMax = Vector2.one; spawnPointsRect.sizeDelta = Vector2.zero;
+
+            CreateSceneOwnedSpawnSlot(spawnPointsGo.transform, "VillagerSpawn", -70f, 20f);
+            CreateSceneOwnedSpawnSlot(spawnPointsGo.transform, "RaidSpawn_Left", -650f, 120f);
+            CreateSceneOwnedSpawnSlot(spawnPointsGo.transform, "RaidSpawn_Right", 650f, 120f);
+
+
 
             if (layout != null && layout.objects != null) {
                 var sortedObjs = layout.objects.OrderBy(o => o.layer).ToList();
@@ -417,6 +446,68 @@ namespace TheBonwater.Rebuild.Editor
             else if (role == "terrain") img.color = new Color(0.4f, 0.3f, 0.2f); // Neutral dirt brown
             else img.color = new Color(0.5f, 0.5f, 0.5f, 0.5f); // Semi-transparent grey
         }
+
+        /// <summary>
+        /// Phase 10F: Creates a scene-owned worksite GameObject with RectTransform, Image, WorldObjectView, and WorksiteAuthoring.
+        /// </summary>
+        private static void CreateSceneOwnedWorksite(Transform parent, string id, string jobId, string assetKey, string spritePath, float x, float y)
+        {
+            var go = new GameObject(id);
+            go.transform.SetParent(parent, false);
+            var rect = go.AddComponent<RectTransform>();
+            rect.anchoredPosition = new Vector2(x, y);
+            rect.sizeDelta = new Vector2(128, 128);
+            rect.localScale = Vector3.one;
+            
+            var img = go.AddComponent<Image>();
+            img.raycastTarget = false;
+            var sp = LoadDecodedSprite(spritePath);
+            if (sp != null) { img.sprite = sp; img.color = Color.white; }
+            else { img.color = new Color(0.5f, 0.5f, 0.5f, 0.8f); }
+            
+            var view = go.AddComponent<WorldObjectView>();
+            view.objectId = id;
+            view.objectType = "decoration";
+            view.preserveManualPlacement = true;
+            view.managedByBackend = false;
+            view.rectTransform = rect;
+            view.image = img;
+            
+            var auth = go.AddComponent<WorksiteAuthoring>();
+            auth.worksiteId = id;
+            auth.jobId = jobId;
+            auth.assetKey = assetKey;
+        }
+
+        /// <summary>
+        /// Phase 10G: Creates a scene-owned spawn slot GameObject.
+        /// </summary>
+        private static void CreateSceneOwnedSpawnSlot(Transform parent, string id, float x, float y)
+        {
+            var go = new GameObject(id);
+            go.transform.SetParent(parent, false);
+            var rect = go.AddComponent<RectTransform>();
+            rect.anchoredPosition = new Vector2(x, y);
+            rect.sizeDelta = new Vector2(64f, 64f);
+            rect.localScale = Vector3.one;
+
+            var img = go.AddComponent<Image>();
+            img.raycastTarget = false;
+            img.color = new Color(0.2f, 0.5f, 1f, 0.2f);
+
+            var view = go.AddComponent<WorldObjectView>();
+            view.objectId = id;
+            view.objectType = "decoration";
+            view.preserveManualPlacement = true;
+            view.managedByBackend = false;
+            view.rectTransform = rect;
+            view.image = img;
+
+            var auth = go.AddComponent<SpawnSlotAuthoring>();
+            auth.slotId = id;
+        }
+
+
     }
 }
 #endif

@@ -60,6 +60,18 @@ namespace TheBonwater.Rebuild.Data
     }
 
     [Serializable]
+    public class EquipmentDefinition : DefinitionBase {
+        public string category; // Tool, Weapon, Armor
+        public string slot; // Tool, Weapon, Armor
+        public int attackBonus;
+        public int defenseBonus;
+        public int jobBonus;
+        public Dictionary<string, int> costs = new Dictionary<string, int>();
+        public string requiredBuilding;
+        public string visualAssetKey;
+    }
+
+    [Serializable]
     public class BalanceDefinition {
         public int foodConsumptionPerVillagerPerDay;
         public int starvationHpDamagePerDay;
@@ -110,6 +122,20 @@ namespace TheBonwater.Rebuild.Data
     [Serializable]
     public class TownVisualLayoutDefinition {
         public List<VisualLayoutNode> placements = new List<VisualLayoutNode>();
+        public List<VisualLayoutObject> objects = new List<VisualLayoutObject>();
+    }
+
+    [Serializable]
+    public class VisualLayoutObject {
+        public string id;
+        public string role;
+        public string asset;
+        public float x, y, width, height;
+        public int layer;
+        public bool preserveAspect;
+        public bool fillScreen;
+        public bool anchorBottom;
+        public bool tile;
     }
 
     [Serializable]

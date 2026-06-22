@@ -12,6 +12,9 @@
     "hammer": "Assets/_Project/ImportedDecoded/Sprite/hammer.png",
     "build3": "Assets/_Project/ImportedDecoded/Sprite/build3.png",
     "Spider": "Assets/_Project/ImportedDecoded/Sprite/beastOfBurden.png",
+    "enemy.basic": "Assets/_Project/ImportedDecoded/Sprite/orc.png",
+    "enemy.fast": "Assets/_Project/ImportedDecoded/Sprite/beastOfBurden.png",
+    "enemy.tank": "Assets/_Project/ImportedDecoded/Sprite/megaOrc.png",
     "SmallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
     "enemy.smallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
     "enemy.SmallMonster": "Assets/_Project/ImportedDecoded/Texture2D/head1.png",
@@ -25,6 +28,19 @@
     "tower_icon": "Assets/_Project/ImportedDecoded/Sprite/guardTower.png",
     "man": "Assets/_Project/ImportedDecoded/Sprite/man 1.png",
     "villagerMale": "Assets/_Project/ImportedDecoded/Sprite/man 1.png",
-    "villagerFemale": "Assets/_Project/ImportedDecoded/Sprite/woman.png"
+    "villagerFemale": "Assets/_Project/ImportedDecoded/Sprite/woman.png",
+    "blacksmith_forge": "Assets/_Project/ImportedDecoded/Sprite/blacksmith.png",
+    "blacksmith_icon": "Assets/_Project/ImportedDecoded/Sprite/blacksmith.png",
+    "ironMine": "Assets/_Project/ImportedDecoded/Sprite/ironMine.png",
+    "bushes": "Assets/_Project/ImportedDecoded/Sprite/bushes.png",
+    "coal": "Assets/_Project/ImportedDecoded/Sprite/coal.png",
+    "coalMine": "Assets/_Project/ImportedDecoded/Sprite/coalMine.png",
+    "farm": "Assets/_Project/ImportedDecoded/Sprite/farm.png",
+    "equipment.tool.woodAxe": "Assets/_Project/ImportedDecoded/Sprite/axe.png",
+    "equipment.tool.pickaxe": "Assets/_Project/ImportedDecoded/Sprite/pickaxe.png",
+    "equipment.weapon.sword": "Assets/_Project/ImportedDecoded/Sprite/steelSword.png",
+    "equipment.weapon.bow": "Assets/_Project/ImportedDecoded/Sprite/BOW.png",
+    "equipment.armor.leather": "Assets/_Project/ImportedDecoded/Sprite/leather.png",
+    "equipment.armor.iron": "Assets/_Project/ImportedDecoded/Sprite/ironArmor.png"
   }
 }

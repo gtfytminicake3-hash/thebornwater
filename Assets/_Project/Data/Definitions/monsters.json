@@ -5,8 +5,32 @@
     "assetKey": "SmallMonster",
     "animationKey": "monster_idle",
     "hp": 100,
-    "attack": 10,
+    "attack": 15,
     "status": "FALLBACK_REBUILT",
     "sourceEvidence": []
+  },
+  {
+    "id": "Basic",
+    "displayName": "Goblin Raider",
+    "assetKey": "enemy.basic",
+    "animationKey": "monster_idle",
+    "hp": 60,
+    "attack": 15
+  },
+  {
+    "id": "Fast",
+    "displayName": "Feral Wolf",
+    "assetKey": "enemy.fast",
+    "animationKey": "monster_idle",
+    "hp": 40,
+    "attack": 10
+  },
+  {
+    "id": "Tank",
+    "displayName": "Orc Titan",
+    "assetKey": "enemy.tank",
+    "animationKey": "monster_idle",
+    "hp": 120,
+    "attack": 25
   }
 ]

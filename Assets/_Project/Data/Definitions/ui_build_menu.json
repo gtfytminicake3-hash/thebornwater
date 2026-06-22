@@ -17,6 +17,12 @@
       "iconAssetId": "tower_icon",
       "buildingId": "guardTower",
       "status": "FALLBACK_REBUILT"
+    },
+    {
+      "id": "BlacksmithsForge",
+      "iconAssetId": "blacksmith_icon",
+      "buildingId": "blacksmithsForge",
+      "status": "ORIGINAL_CONFIRMED"
     }
   ]
 }

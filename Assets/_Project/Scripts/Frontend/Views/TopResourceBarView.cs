@@ -3,21 +3,100 @@ using UnityEngine.UI;
 
 namespace TheBonwater.Rebuild {
     public class TopResourceBarView : MonoBehaviour {
+        [Header("Legacy")]
         public Text txtResources;
+
+        [Header("Fixed HUD Slots")]
+        public Text timeText;
+        public Text resourceText;
+        public Text popDefenseText;
+        public Text objectiveText;
+        public Text statusText;
+
         private AutoTimeController autoTime;
         private string cachedDayPhase = "DAY 1 - MORNING";
-        private string cachedResources = "";
+        
+        private string strWoodFoodIron = "";
+        private string strPopDef = "";
+        private string strObj = "";
+        private string strStatus = "";
 
         private void Start() {
             autoTime = FindObjectOfType<AutoTimeController>();
             if (autoTime != null) {
                 Diagnostics.RuntimeTrace.Log("TIME_DISPLAY_BOUND", "source=AutoTimeController");
             }
+            
+            // Try to bind if references are missing
+            if (timeText == null || resourceText == null) {
+                Transform parent = txtResources != null ? txtResources.transform.parent : transform;
+                
+                timeText = GetOrCreateSlot(parent, "HUD_TimeText", -24);
+                resourceText = GetOrCreateSlot(parent, "HUD_ResourceText", -42);
+                popDefenseText = GetOrCreateSlot(parent, "HUD_PopDefenseText", -60);
+                objectiveText = GetOrCreateSlot(parent, "HUD_ObjectiveText", -78);
+                statusText = GetOrCreateSlot(parent, "HUD_StatusText", -96);
+            }
+
+            if (txtResources != null && timeText != null && txtResources.gameObject != timeText.gameObject) {
+                txtResources.gameObject.SetActive(false);
+            }
+            
+            // HUD Layout Audit Logging
+            var hudRoot = GameObject.Find("HUDRoot");
+            if (hudRoot != null) {
+                var parentName = hudRoot.transform.parent != null ? hudRoot.transform.parent.name : "null";
+                UnityEngine.Debug.Log($"[HUDLayout] HUDRoot parent={parentName} scale={hudRoot.transform.localScale}");
+                
+                var worldRoot = GameObject.Find("TownWorldRoot");
+                if (worldRoot == null) worldRoot = GameObject.Find("WorldRoot");
+                bool isUnderWorldRoot = worldRoot != null && hudRoot.transform.IsChildOf(worldRoot.transform);
+                UnityEngine.Debug.Log($"[HUDLayout] HUDRoot is under WorldRoot={isUnderWorldRoot}");
+                
+                if (isUnderWorldRoot) {
+                    hudRoot.transform.SetParent(worldRoot.transform.parent, true); // move it out safely
+                    UnityEngine.Debug.Log($"[HUDLayout] HUDRoot moved out of WorldRoot to {hudRoot.transform.parent.name}");
+                }
+            }
+
+            if (timeText != null) {
+                var rt = timeText.GetComponent<RectTransform>();
+                UnityEngine.Debug.Log($"[HUDLayout] TopHUD anchoredPosition={rt.anchoredPosition} size={rt.sizeDelta} anchors={rt.anchorMin}/{rt.anchorMax}");
+                UnityEngine.Debug.Log($"[HUDLayout] TopHUD safeMargin=24");
+            }
         }
+        
+        private Text GetOrCreateSlot(Transform parent, string name, float yPos) {
+            Transform t = parent.Find(name);
+            if (t != null) return t.GetComponent<Text>();
+
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            var rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = new Vector2(0.5f, 1f);
+            rt.anchorMax = new Vector2(0.5f, 1f);
+            rt.pivot = new Vector2(0.5f, 1f);
+            rt.sizeDelta = new Vector2(600, 20);
+            rt.anchoredPosition = new Vector2(0, yPos);
+
+            var txt = go.AddComponent<Text>();
+            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            txt.fontSize = 18;
+            txt.alignment = TextAnchor.UpperCenter;
+            txt.color = Color.white;
+            txt.horizontalOverflow = HorizontalWrapMode.Overflow;
+            txt.verticalOverflow = VerticalWrapMode.Overflow;
+            
+            var outline = go.AddComponent<Outline>();
+            outline.effectColor = new Color(0,0,0,0.8f);
+            outline.effectDistance = new Vector2(1, -1);
+            
+            return txt;
+        }
+        
+
 
         private void Update() {
-            if (txtResources == null) return;
-            
             if (autoTime == null && TownInteractionController.Instance != null) {
                 autoTime = TownInteractionController.Instance.GetComponent<AutoTimeController>();
                 if (autoTime != null) Diagnostics.RuntimeTrace.Log("TIME_DISPLAY_BOUND", "source=AutoTimeController");
@@ -28,7 +107,9 @@ namespace TheBonwater.Rebuild {
                 timeStr = $" | {Mathf.CeilToInt(autoTime.TimeRemaining)}s";
             }
 
-            txtResources.text = $"{cachedDayPhase}{timeStr}\n{cachedResources}";
+            if (timeText != null) {
+                timeText.text = $"{cachedDayPhase}{timeStr}";
+            }
         }
 
         public void UpdateView(GameSnapshot snap) {
@@ -36,13 +117,34 @@ namespace TheBonwater.Rebuild {
             string wName = DefinitionDisplayService.GetResourceName("wood").ToUpper();
             string fName = DefinitionDisplayService.GetResourceName("food").ToUpper();
             string iName = DefinitionDisplayService.GetResourceName("iron").ToUpper();
+            string sName = DefinitionDisplayService.GetResourceName("steel").ToUpper();
+            string cName = DefinitionDisplayService.GetResourceName("coal").ToUpper();
             
             cachedDayPhase = $"DAY {snap.day} - {snap.timeOfDay.ToUpper()}";
-            cachedResources = $"{wName}: {snap.wood} / {snap.woodCapacity}    {fName}: {snap.food} / {snap.foodCapacity}    {iName}: {snap.iron} / {snap.ironCapacity}";
+            
+            strWoodFoodIron = $"{wName}: {snap.wood}/{snap.woodCapacity}   {fName}: {snap.food}/{snap.foodCapacity}   {iName}: {snap.iron}/{snap.ironCapacity}   {cName}: {snap.coal}/{snap.coalCapacity}   {sName}: {snap.steel}/{snap.steelCapacity}";
+            
+            int alivePop = 0;
+            foreach(var v in snap.villagers) { if (v.hp > 0) alivePop++; }
+            
+            strPopDef = $"POP: {alivePop} / {snap.maxPopulation}    DEF: {snap.totalDefense} vs Raid";
+            
+            string objStatus = snap.gameStatus == "Playing" ? "Playing" : snap.gameStatus;
+            
+            string shortObj = snap.objectiveText;
+            if (!string.IsNullOrEmpty(shortObj)) {
+                shortObj = shortObj.Replace("Survive to ", "").Replace("and build", "+");
+            }
+            
+            strObj = $"Objective: {shortObj}";
+            strStatus = $"Status: {objStatus}";
 
-            if (snap.wood < 0 || snap.wood > snap.woodCapacity) Diagnostics.RuntimeTrace.Log("WARNING", $"Wood is out of bounds: {snap.wood}/{snap.woodCapacity}");
-            if (snap.food < 0 || snap.food > snap.foodCapacity) Diagnostics.RuntimeTrace.Log("WARNING", $"Food is out of bounds: {snap.food}/{snap.foodCapacity}");
-            if (snap.iron < 0 || snap.iron > snap.ironCapacity) Diagnostics.RuntimeTrace.Log("WARNING", $"Iron is out of bounds: {snap.iron}/{snap.ironCapacity}");
+            if (resourceText != null) resourceText.text = strWoodFoodIron;
+            if (popDefenseText != null) popDefenseText.text = strPopDef;
+            if (objectiveText != null) objectiveText.text = strObj;
+            if (statusText != null) statusText.text = strStatus;
+
+            Diagnostics.RuntimeTrace.Log("DEFENSE_DISPLAY_UPDATE", $"defense={snap.totalDefense}");
         }
     }
 }

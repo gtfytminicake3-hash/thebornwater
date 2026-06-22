@@ -1,0 +1,102 @@
+[
+  {
+    "id": "woodAxe",
+    "displayName": "Wood Axe",
+    "category": "Tool",
+    "slot": "Tool",
+    "attackBonus": 0,
+    "defenseBonus": 0,
+    "jobBonus": 5,
+    "costs": {
+      "wood": 15
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.tool.woodAxe"
+  },
+  {
+    "id": "pickaxe",
+    "displayName": "Pickaxe",
+    "category": "Tool",
+    "slot": "Tool",
+    "attackBonus": 0,
+    "defenseBonus": 0,
+    "jobBonus": 2,
+    "costs": {
+      "wood": 10,
+      "iron": 5
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.tool.pickaxe"
+  },
+  {
+    "id": "sword",
+    "displayName": "Sword",
+    "category": "Weapon",
+    "slot": "Weapon",
+    "attackBonus": 10,
+    "defenseBonus": 0,
+    "jobBonus": 0,
+    "costs": {
+      "iron": 15
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.weapon.sword"
+  },
+  {
+    "id": "bow",
+    "displayName": "Bow",
+    "category": "Weapon",
+    "slot": "Weapon",
+    "attackBonus": 10,
+    "defenseBonus": 0,
+    "jobBonus": 0,
+    "costs": {
+      "wood": 15
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.weapon.bow"
+  },
+  {
+    "id": "leatherArmor",
+    "displayName": "Leather Armor",
+    "category": "Armor",
+    "slot": "Armor",
+    "attackBonus": 0,
+    "defenseBonus": 5,
+    "jobBonus": 0,
+    "costs": {
+      "food": 30
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.armor.leather"
+  },
+  {
+    "id": "ironArmor",
+    "displayName": "Iron Armor",
+    "category": "Armor",
+    "slot": "Armor",
+    "attackBonus": 0,
+    "defenseBonus": 15,
+    "jobBonus": 0,
+    "costs": {
+      "iron": 20
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.armor.iron"
+  },
+  {
+    "id": "hammer",
+    "displayName": "Hammer",
+    "category": "Tool",
+    "slot": "Tool",
+    "attackBonus": 0,
+    "defenseBonus": 0,
+    "jobBonus": 0,
+    "costs": {
+      "wood": 10,
+      "iron": 5
+    },
+    "requiredBuilding": "blacksmithsForge",
+    "visualAssetKey": "equipment.tool.hammer"
+  }
+]

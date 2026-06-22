@@ -52,17 +52,38 @@ namespace TheBonwater.Rebuild {
                 Destroy(child.gameObject);
             }
 
+            // Auto-layout: add VerticalLayoutGroup + ContentSizeFitter to contentRoot on first init
+            if (contentRoot.GetComponent<VerticalLayoutGroup>() == null) {
+                var vlg = contentRoot.gameObject.AddComponent<VerticalLayoutGroup>();
+                vlg.spacing = 6;
+                vlg.childControlHeight = true;
+                vlg.childForceExpandHeight = false;
+                vlg.childControlWidth = true;
+                vlg.childForceExpandWidth = true;
+                vlg.padding = new RectOffset(10, 10, 4, 4);
+            }
+            if (contentRoot.GetComponent<ContentSizeFitter>() == null) {
+                var csf = contentRoot.gameObject.AddComponent<ContentSizeFitter>();
+                csf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+                csf.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+            }
+            // Add ScrollRect to parent if not already present
+            var parentScrollRect = contentRoot.parent.GetComponent<ScrollRect>();
+            if (parentScrollRect == null) {
+                parentScrollRect = contentRoot.parent.gameObject.AddComponent<ScrollRect>();
+                parentScrollRect.horizontal = false;
+                parentScrollRect.vertical = true;
+                parentScrollRect.movementType = ScrollRect.MovementType.Clamped;
+                parentScrollRect.scrollSensitivity = 25;
+                parentScrollRect.decelerationRate = 0.1f;
+                parentScrollRect.content = contentRoot as RectTransform;
+            }
+            
             foreach (var item in repo.BuildMenu.menuItems) {
                 var btnGo = new GameObject("BtnBuild_" + item.buildingId);
                 btnGo.transform.SetParent(contentRoot, false);
                 var rect = btnGo.AddComponent<RectTransform>();
-                rect.anchorMin = new Vector2(0.5f, 1f); rect.anchorMax = new Vector2(0.5f, 1f);
-                rect.pivot = new Vector2(0.5f, 1f);
                 rect.sizeDelta = new Vector2(300, 60);
-                if (item.buildingId == "hut") rect.anchoredPosition = new Vector2(0, 0);
-                else if (item.buildingId == "storage") rect.anchoredPosition = new Vector2(0, -70);
-                else if (item.buildingId == "guardTower") rect.anchoredPosition = new Vector2(0, -140);
-                else rect.anchoredPosition = new Vector2(0, -210);
                 
                 var img = btnGo.AddComponent<Image>();
                 img.color = new Color(0.3f, 0.3f, 0.3f);
@@ -186,22 +207,24 @@ namespace TheBonwater.Rebuild {
             }
 
             Diagnostics.RuntimeTrace.Log("GAMEPLAY_UI", $"Build clicked id={tId}");
-            GameCommand cmd = null;
-            if (tId == "hut") cmd = new BuildHutCommand();
-            else if (tId == "storage") cmd = new BuildStorageCommand();
-            else if (tId == "guardTower") cmd = new BuildGuardTowerCommand();
-            
-            if (cmd != null) {
-                TownInteractionController.Instance.ExecuteCommand(cmd);
-                var snapAfter = GameServiceLocator.Backend.GetSnapshot();
-                Diagnostics.RuntimeTrace.Log("GAMEPLAY_UI", $"Build result tasks={snapAfter.tasks.Count}");
-                bool hasTask = snapAfter.tasks.Exists(task => !string.IsNullOrEmpty(task.targetBuildingId) && task.targetBuildingId == tId);
-                if (!hasTask) {
-                    Diagnostics.RuntimeTrace.Log("GAMEPLAY_UI_ERROR", $"Build {tId} clicked but snapshot has no {tId} construction task");
+
+            if (BuildingPlacementController.Instance != null) {
+                BuildingPlacementController.Instance.StartPlacement(tId);
+                
+                // Hide the build menu so player can place
+                var closeBtn = transform.parent?.Find("BuildMenuPanel/HeaderCloseArea/BtnCloseBuildMenu")?.GetComponent<Button>();
+                if (closeBtn != null) {
+                    closeBtn.onClick.Invoke();
+                } else {
+                    // Fallback to previous behavior of just disabling this gameObject
+                    gameObject.SetActive(false);
+                    // Also try disabling parent BuildMenuPanel
+                    if (transform.parent != null && transform.parent.name == "BuildMenuPanel") {
+                        transform.parent.gameObject.SetActive(false);
+                    }
                 }
-                gameObject.SetActive(false); // Close menu on build
             } else {
-                Diagnostics.RuntimeTrace.Log("GAMEPLAY_UI_ERROR", $"missing build button command id={tId}");
+                Diagnostics.RuntimeTrace.Log("GAMEPLAY_UI_ERROR", $"BuildingPlacementController not found!");
             }
         }
 

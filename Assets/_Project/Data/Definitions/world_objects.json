@@ -10,6 +10,38 @@
         "il2cpp: BonfireBuilding",
         "asset: bonfire.png"
       ]
+    },
+    {
+      "id": "ironMine",
+      "displayName": "Iron Mine",
+      "assetKey": "ironMine",
+      "animationKey": null,
+      "status": "ORIGINAL_CONFIRMED",
+      "sourceEvidence": ["asset: ironMine.png"]
+    },
+    {
+      "id": "forageArea",
+      "displayName": "Forage Area",
+      "assetKey": "bushes",
+      "animationKey": null,
+      "status": "ORIGINAL_CONFIRMED",
+      "sourceEvidence": ["asset: bushes.png"]
+    },
+    {
+      "id": "coalMine",
+      "displayName": "Coal Mine",
+      "assetKey": "coalMine",
+      "animationKey": null,
+      "status": "ORIGINAL_CONFIRMED",
+      "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Building.CoalMine", "asset: coalMine.png"]
+    },
+    {
+      "id": "farm",
+      "displayName": "Farm",
+      "assetKey": "farm",
+      "animationKey": null,
+      "status": "ORIGINAL_CONFIRMED",
+      "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Building.Farm", "asset: farm.png"]
     }
   ]
 }

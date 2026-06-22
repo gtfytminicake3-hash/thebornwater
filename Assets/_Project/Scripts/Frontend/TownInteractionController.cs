@@ -22,6 +22,11 @@ namespace TheBonwater.Rebuild {
             if (autoTime == null) {
                 autoTime = gameObject.AddComponent<AutoTimeController>();
             }
+            
+            var placementCtrl = GetComponent<BuildingPlacementController>();
+            if (placementCtrl == null) {
+                placementCtrl = gameObject.AddComponent<BuildingPlacementController>();
+            }
 
             // DEBUG_ONLY: Disable all debug/prototype buttons from player HUD
             if (btnSelectVillager != null) btnSelectVillager.onClick.AddListener(() => { RuntimeTrace.Log("UI_CLICK", "Button=SelectVillager Scene=TownScene"); ExecuteCommand(new SelectNextVillagerCommand()); });

@@ -29,7 +29,8 @@
     "assetKey": "villagerMale",
     "animationKey": "villager_guard",
     "status": "FALLBACK_REBUILT",
-    "sourceEvidence": []
+    "sourceEvidence": [],
+    "defense": 10
   },
   {
     "id": "idle",
@@ -38,5 +39,48 @@
     "animationKey": "villager_idle",
     "status": "FALLBACK_REBUILT",
     "sourceEvidence": []
+  },
+  {
+    "id": "miner",
+    "displayName": "Miner",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_work",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": []
+  },
+  {
+    "id": "coalMiner",
+    "displayName": "Coal Miner",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_work",
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Jobs.CoalMiner"],
+    "productionPerPhase": 1
+  },
+  {
+    "id": "blacksmith",
+    "displayName": "Blacksmith",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_work",
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Jobs.Blacksmith"]
+  },
+  {
+    "id": "towerGuard",
+    "displayName": "Tower Guard",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_guard",
+    "status": "FALLBACK_REBUILT",
+    "sourceEvidence": [],
+    "defense": 15
+  },
+  {
+    "id": "farmer",
+    "displayName": "Farmer",
+    "assetKey": "villagerMale",
+    "animationKey": "villager_work",
+    "status": "ORIGINAL_CONFIRMED",
+    "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Jobs.Farmer"],
+    "productionPerPhase": 3
   }
 ]
