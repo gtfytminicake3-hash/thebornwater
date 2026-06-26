@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 namespace TheBonwater.Rebuild {
     public class MapPanZoomController : MonoBehaviour {
@@ -32,6 +33,48 @@ namespace TheBonwater.Rebuild {
             HandleTouch();
         }
 
+        private bool IsPointerOverBlockingUi() {
+            if (EventSystem.current == null) return false;
+
+            var pointerData = new PointerEventData(EventSystem.current) { position = Input.mousePosition };
+            var results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerData, results);
+
+            foreach (var result in results) {
+                if (result.gameObject == null) continue;
+
+                Transform t = result.gameObject.transform;
+                while (t != null) {
+                    string name = t.gameObject.name;
+                    if (name == "BlacksmithCraftPanel" || 
+                        name == "CraftScrollArea" || 
+                        name == "SelectedVillagerPanel" || 
+                        name == "OptionsScrollArea" ||
+                        name == "BuildMenuPanel" ||
+                        name == "BuildMenuViewport" ||
+                        name == "BuildMenuContentRoot") {
+                        return true;
+                    }
+
+                    if (t.GetComponent<UnityEngine.UI.ScrollRect>() != null || 
+                        t.GetComponent<UnityEngine.UI.Button>() != null || 
+                        t.GetComponent<UnityEngine.UI.Dropdown>() != null || 
+                        t.GetComponent<UnityEngine.UI.InputField>() != null) {
+                        return true;
+                    }
+
+                    var tmproCmp = t.GetComponent("TMP_InputField");
+                    if (tmproCmp != null) {
+                        return true;
+                    }
+
+                    t = t.parent;
+                }
+            }
+
+            return false;
+        }
+
         private void HandleMouse() {
             // Zoom
             float scrollA = Input.mouseScrollDelta.y;
@@ -39,11 +82,13 @@ namespace TheBonwater.Rebuild {
             float scroll = Mathf.Abs(scrollA) > 0.001f ? scrollA : scrollB * 10f;
 
             if (Mathf.Abs(scroll) > 0.001f) {
-                float oldScale = worldRoot.localScale.x;
-                float newScale = Mathf.Clamp(oldScale + scroll * zoomSpeed, minZoom, maxZoom);
-                worldRoot.localScale = new Vector3(newScale, newScale, 1f);
+                if (!IsPointerOverBlockingUi()) {
+                    float oldScale = worldRoot.localScale.x;
+                    float newScale = Mathf.Clamp(oldScale + scroll * zoomSpeed, minZoom, maxZoom);
+                    worldRoot.localScale = new Vector3(newScale, newScale, 1f);
 
-                UnityEngine.Debug.Log($"[MapZoom] scroll={scroll} oldScale={oldScale} newScale={newScale} worldRoot={worldRoot.name}");
+                    UnityEngine.Debug.Log($"[MapZoom] scroll={scroll} oldScale={oldScale} newScale={newScale} worldRoot={worldRoot.name}");
+                }
             }
 
             // Pan

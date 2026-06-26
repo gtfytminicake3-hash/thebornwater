@@ -1,0 +1,23 @@
+# Phase 14B Upgrade Polish Test Report
+- [PASS] Hut task created
+- [PASS] Completed Hut exists
+- [FAIL] Upgrade fails with insufficient resources
+- [PASS] Upgrade command succeeds with enough resources
+- [PASS] Resource deducted exactly once on command execution
+- [PASS] Upgrade task created
+- [FAIL] Duplicate upgrade command is blocked
+- [PASS] Hut level is now 2
+- [PASS] Upgrade task removed from active tasks
+- [FAIL] Already upgraded building cannot be upgraded again
+- [PASS] Hut Level 2 remains Level 2 after load
+- [PASS] Population capacity is correct after load (and not double-applied)
+- [PASS] Completed Storage exists
+- [FAIL] Baseline resource capacity is correct
+- [PASS] Storage upgrade command succeeds
+- [PASS] Storage level is now 2
+- [FAIL] Resource capacity increases correctly for Level 2 Storage
+- [PASS] Storage Level 2 remains Level 2 after load
+- [PASS] Resource capacity remains correct after load
+- [PASS] Second Completed Hut exists
+- [PASS] Upgrade task 2 created
+- [PASS] Upgrade task is safely cancelled/removed after target placement is removed

@@ -6,7 +6,7 @@
 [PASS] enemies.json exists
 [PASS] balance.json exists
 [PASS] objectives.json exists
-[PASS] all records have source/confidence/symbolEvidence
+[FAIL] all records have source/confidence/symbolEvidence
 [PASS] all building costs reference valid resources
 [PASS] all job production resources reference valid resources
 [PASS] enemy definitions have hp/attack
@@ -15,14 +15,14 @@
 [PASS] NewGame initializes resources from definitions
 [PASS] Guard job exists
 [PASS] Assign Worker can assign Guard
-[PASS] Night phase triggers raid check
+[FAIL] Night phase triggers raid check
 [FAIL] Raid can spawn enemy state
 [PASS] Raid can reduce villager HP
 [PASS] Guard reduces raid damage
-[PASS] GuardTower or GuardPost increases defense
+[FAIL] GuardTower or GuardPost increases defense
 [PASS] Raid can be repelled with enough defense
 [PASS] All villagers dead triggers GameOver
-[PASS] Save/Load preserves combat/raid related state
+[FAIL] Save/Load preserves combat/raid related state
 [PASS] Existing resource/build/time/save loop still works
 [PASS] Job production uses JobDefinition
 [PASS] Build cost uses BuildingDefinition
@@ -80,18 +80,18 @@
 [PASS] Editor Test Tool exists
 [PASS] Editor Test Tool is under Editor folder or UNITY_EDITOR guarded
 [PASS] debug/test actions are classified DEBUG_ONLY
-[PASS] temporary UI is classified TEMPORARY_DEV_UI
+[FAIL] temporary UI is classified TEMPORARY_DEV_UI
 [PASS] player-facing UI does not claim unknown actions as original
-[PASS] GuardTower or GuardPost increases defense
+[FAIL] GuardTower or GuardPost increases defense
 [PASS] Build Hut no longer creates completed Hut immediately in FidelityMode
 [PASS] Build Hut no longer creates completed Hut immediately in FidelityMode
-[PASS] BuildHutCommand creates a construction task instead of a completed building
+[FAIL] BuildHutCommand creates a construction task instead of a completed building
 [PASS] RuntimeEntityVisualAudit.md exists
 [PASS] RuntimeEntityAssetBindingMap.csv exists
 [PASS] AnimationLiteRuntimeReport.md exists
 [PASS] RuntimeVisualBindingReport.md exists
-[PASS] Villager visuals read from GameSnapshot
-[PASS] Building visuals read from GameSnapshot/tasks
+[FAIL] Villager visuals read from GameSnapshot
+[FAIL] Building visuals read from GameSnapshot/tasks
 [PASS] Build Hut does not instant-complete visually
 [PASS] Construction progress is visible
 [PASS] No MockBackend in runtime player flow
@@ -151,13 +151,78 @@
 [PASS] Fallback values in tasks.json are not marked original
 [PASS] Fallback values in enemies.json are not marked original
 [PASS] Fallback values in balance.json are not marked original
-[PASS] Construction remains incomplete before enough labour
-[PASS] Builder/labour can increase currentCompletion
-[PASS] Completed Hut appears only after currentCompletion >= finalCompletion
+[FAIL] Construction remains incomplete before enough labour
+[FAIL] Builder/labour can increase currentCompletion
+[FAIL] Completed Hut appears only after currentCompletion >= finalCompletion
 [PASS] Current instant-build path is marked PROTOTYPE_FALLBACK
 [PASS] building definitions separate symbolEvidence / behaviorEvidence / balanceEvidence
 [PASS] missing exact numbers are reported UNKNOWN or PROTOTYPE_FALLBACK
-[PASS] project compiles
+[PASS] RuntimeTrace.cs exists
+[PASS] RuntimeButtonBindingAudit.md exists
+[PASS] SaveLoadPersistenceRuntimeReport.md exists
+[PASS] RuntimeBackendTraceTest exists
+[PASS] Save writes to persistent disk path
+[PASS] Load works from fresh backend instance
+[PASS] Background fallback is not magenta
+[PASS] No player HUD button directly mutates UI-only state
+[FAIL] ManualPlaytestSprint11Report.md exists
+[FAIL] UXButtonClarityReport.md exists
+[FAIL] Sprint11RuntimeBugfixLog.md exists
+[PASS] Save/Continue persistence documented
+[PASS] Objective system exists
+[PASS] Objective UI reads from snapshot/backend state
+[PASS] Build Hut contributes to objective progress
+[PASS] ThreeDayGameplayLoopTest exists
+[FAIL] ThreeDayGameplayLoopTestReport.md exists
+[PASS] Save/load preserves objective and construction state
+[PASS] Job/resource loop affects state through backend
+[PASS] Day/night loop advances through backend
+[PASS] Event log records core gameplay actions
+[FAIL] JobControlUXReport.md exists
+[FAIL] BuildActionUXReport.md exists
+[FAIL] TimeAdvanceUXReport.md exists
+[FAIL] EventLogAndObjectiveUXReport.md exists
+[FAIL] RuntimeTraceOutputReliabilityReport.md exists
+[PASS] PlayerControlUXTest exists
+[FAIL] Job assignment is not ambiguous
+[PASS] Build failure logs reason
+[PASS] Objective UI shows dynamic progress
+[PASS] Event log records at least 5 recent events
+[PASS] Runtime trace output reliable
+[PASS] No MockBackend runtime flow
+[PASS] No ambiguous STORAGE-only build button remains
+[FAIL] Build button text cost matches backend definition
+[PASS] Runtime trace fallback log path is handled
+[FAIL] PlayerControlUXTestReport.md exists
+[FAIL] ThreeDayGameplayLoopTestReport.md exists
+[PASS] No report asks user to manually verify batchmode pass
+[FAIL] Build success spends or deposits resources
+[PASS] Build fail does not create task
+[FAIL] Storage completed remains in buildings
+[FAIL] GuardTower completed remains in buildings
+[FAIL] Building visual supports Storage and GuardTower
+[PASS] Assign job can affect more than first villager
+[PASS] No magenta fallback in TownScene player background
+[FAIL] Button labels are synced with backend costs
+[PASS] RuntimeGameplayBugfixTest exists
+[FAIL] RuntimeGameplayBugfixReport.md exists
+[PASS] Save/load preserves completed Storage and GuardTower
+[PASS] Assign job can affect selected villager, not only Bryn
+[PASS] SELECT NEXT VILLAGER exists if job UI is cycle-based
+[FAIL] Build button labels match BuildingDefinition costs
+[PASS] Build fail message uses same cost as backend
+[PASS] Build success spends/deposits exact resources
+[PASS] Resources never go negative after build
+[FAIL] Storage complete remains in GameSnapshot.buildings
+[FAIL] GuardTower complete remains in GameSnapshot.buildings
+[FAIL] Storage/GuardTower visual fallback does not disappear
+[PASS] No magenta/#FF00FF player background remains
+[PASS] RuntimeCoreBugfixTest exists
+[FAIL] RuntimeCoreBugfixReport.md exists
+[PASS] Full verifier pass
+[PASS] Smoke test pass
+[PASS] Runtime trace test pass
+[PASS] Player control UX test pass
 
-Total PASS: 156
-Total FAIL: 2
+Total PASS: 185
+Total FAIL: 38

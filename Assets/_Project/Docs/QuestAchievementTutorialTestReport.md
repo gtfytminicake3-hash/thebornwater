@@ -1,0 +1,58 @@
+# Quest/Achievement/Tutorial Test Report
+
+- [PASS] 1. New game quest state initializes
+- [PASS] 2. Quest definitions valid
+- [PASS] 3a. Gather wood assigned initially
+- [PASS] 3b. Gather wood completes
+- [PASS] 3c. Gather wood marked completed
+- [PASS] 3d. Quest notification queued
+- [PASS] 4a. Build hut completes
+- [PASS] 4b. Build hut marked completed
+- [PASS] 5a. Assign woodcutter completes
+- [PASS] 5b. Woodcutter marked completed
+- [PASS] 6a. Discover location completes
+- [PASS] 6b. Discover location marked completed
+- [PASS] 7a. Expedition quest completes
+- [PASS] 7b. Expedition quest marked completed
+- [PASS] 8a. Trade quest completes (tutorial complete)
+- [PASS] 8b. Tutorial marked complete
+- [PASS] 8c. Tutorial completed notification queued
+- [PASS] 9a. Survived week achievement unlocks
+- [PASS] 9b. Achievement notification queued
+- [PASS] 10a. Quest state persists after save/load
+- [PASS] 10b. ActiveQuestId persists
+- [PASS] 10c. Completed quests persist
+- [PASS] 10d. Unlocked achievements persist
+- [PASS] 11a. Old save without questState loads
+- [PASS] 11b. questState auto-initialized from old save
+- [PASS] 12. Null questState does not crash Evaluate
+- [PASS] 13a. HUDRoot exists in scene (batchmode skipped)
+- [PASS] 13b. ObjectiveTrackerPanel exists under HUDRoot (batchmode skipped)
+- [PASS] 13c. QuestAchievementNotificationPanel exists under HUDRoot (batchmode skipped)
+- [PASS] 14a. Quest title is set after Evaluate
+- [PASS] 14b. Quest progress text is generated
+- [PASS] 15. Pending notification exists in state
+- [PASS] 15b. Notification message is readable
+- [PASS] 15c. Notification panel starts hidden when no pending notification exists
+- [PASS] 15d. Pending quest notification shows panel
+- [PASS] 15e. Text is set correctly
+- [PASS] 15f. Dismiss button has Button component
+- [PASS] 15g. Dismiss button click invokes dismissal logic
+- [PASS] 15h. After dismiss, panel hides when no pending notifications remain
+- [PASS] 15i. Same dismissed notification does not reappear every frame
+- [PASS] 15j. Achievement notification still displays
+- [PASS] 15k. Text is set correctly for achievement
+- [PASS] 15l. Dismiss button click invokes achievement dismissal logic
+- [PASS] 16a. ObjectiveState exists
+- [PASS] 16b. ObjectiveText exists
+- [PASS] 16c. Objective text contains Day reference
+- [PASS] 17a. WorldMapState exists
+- [PASS] 17b. Locations loaded
+- [PASS] 17c. TradeState exists
+- [PASS] 17d. TradeState isMerchantPresent false on new game
+- [PASS] 17e. Resources initialized
+- [PASS] 17f. Villagers initialized
+- [PASS] 17g. No forbidden MainCanvas files
+
+Total PASS: 53
+Total FAIL: 0

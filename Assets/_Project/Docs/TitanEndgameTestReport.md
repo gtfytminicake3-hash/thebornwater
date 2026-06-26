@@ -1,0 +1,118 @@
+# Titan/Endgame Test Report
+
+- [PASS] BOSS.png asset exists on disk
+- [PASS] BOSS.png loaded successfully as Sprite
+- [PASS] 1a. TitanState initializes not null
+- [PASS] 1b. TitanState starts not awakened
+- [PASS] 1c. TitanState starts not defeated
+- [PASS] 1d. TitanState HP starts at 500
+- [PASS] 1e. TitanState max HP starts at 500
+- [PASS] 2a. Old save null titanState repaired
+- [PASS] 2b. Repaired maxHp is 500
+- [PASS] 2c. Repaired hp is 500
+- [PASS] 2d. Invalid maxHp repaired to 500
+- [PASS] 2e. Hp clamped to maxHp
+- [PASS] 2f. Negative Hp clamped to 0
+- [PASS] 2g. If defeated, hp must be 0
+- [PASS] 3a. Not awakened if finalCastle not discovered
+- [PASS] 3b. Awakened when finalCastle discovered
+- [PASS] 3c. Objective text updated for Titan
+- [PASS] 4. HP not reset to 500 on duplicate awaken check
+- [PASS] 5a. Cannot attack if not awakened
+- [PASS] 5b. Cannot attack with empty attacker list
+- [PASS] 5c. Invalid attacker ID rejected
+- [PASS] 5d. Dead attacker rejected
+- [PASS] 5e. Attacker on expedition rejected
+- [PASS] 5f. Non-guard attacker rejected
+- [PASS] 6a. Attack success
+- [PASS] 6b. Titan HP decreases
+- [PASS] 6c. Battle log/result updates
+- [PASS] 7a. Attacker received damage
+- [PASS] 7b. Attacker health clamped to 0, no negative health
+- [PASS] 8a. Titan hp is 0
+- [PASS] 8b. Titan isDefeated set to true
+- [PASS] 8c. endgameVictoryAchieved set to true
+- [PASS] 8d. Game isGameOver is true
+- [PASS] 8e. gameStatus set to Victory
+- [PASS] 9a. Awakened state persisted
+- [PASS] 9b. Damaged HP persisted
+- [PASS] 9c. Defeated state persisted
+- [PASS] 10a. HUDRoot exists in TownScene
+- [PASS] 10b. TitanBossPanel exists under HUDRoot
+- [PASS] 10c. TitleText exists
+- [PASS] 10d. StatusText exists
+- [PASS] 10e. HpText exists
+- [PASS] 10f. HpSlider exists
+- [PASS] 10g. BtnAttackTitan exists
+- [PASS] 10h. TitanBossPanelView component attached
+- [PASS] 10k. ExplanationText exists
+- [PASS] 10l. TitanAvatar exists
+- [PASS] 10m. explanationText is bound on TitanBossPanelView
+- [PASS] 10n. titanAvatar is bound on TitanBossPanelView
+- [PASS] 10o. TitanAvatarImage exists under TitanAvatar
+- [PASS] 10p. titanAvatarImage is bound on TitanBossPanelView
+- [PASS] 10q. titanAvatarImage sprite is assigned to BOSS
+- [PASS] 10i. GameplayUIManager exists on HUDRoot
+- [PASS] 10j. TitanBossPanelView is bound on GameplayUIManager
+- [PASS] 11a. Panel hidden before awaken
+- [PASS] 11b. Panel visible after awaken
+- [PASS] 11c. HP text updates correctly
+- [PASS] 11d. HP slider updates correctly
+- [PASS] 11k. TitanAvatar is visible when awakened
+- [PASS] 11l. ExplanationText is visible when awakened
+- [PASS] 11m. TitanAvatarImage is visible when awakened
+- [PASS] 11f. Explanation text contains battle instructions
+- [PASS] 11g. Status explains no ready Guards
+- [PASS] 11h. Status explains ready Guards count
+- [PASS] 11e. Panel remains visible after defeat
+- [PASS] 11i. Attack button disabled after defeat
+- [PASS] 11j. Status text shows victory after defeat
+- [PASS] 11n. TitanAvatarImage remains visible after defeat
+- [PASS] 12a. objectiveState exists initially
+- [PASS] 12b. objectiveText initialized
+- [PASS] 12c. Day 10 victory still triggers
+- [PASS] 12d. QuestState intact
+- [PASS] 13a. WorldMapState initializes
+- [PASS] 13b. TradeState initializes
+- [PASS] 13c. QuestState initializes
+- [PASS] 13d. Forbidden MainCanvas files do not exist
+- [PASS] 14a. Locations exist
+- [PASS] 14b. Location home exists
+- [PASS] 14c. Location home coordinates are correct: (5, 5) matches expected (5, 5)
+- [PASS] 14b. Location northernVillage exists
+- [PASS] 14c. Location northernVillage coordinates are correct: (5, 6) matches expected (5, 6)
+- [PASS] 14b. Location lightHouseRuins exists
+- [PASS] 14c. Location lightHouseRuins coordinates are correct: (6, 7) matches expected (6, 7)
+- [PASS] 14b. Location agatha exists
+- [PASS] 14c. Location agatha coordinates are correct: (7, 7) matches expected (7, 7)
+- [PASS] 14b. Location volandor exists
+- [PASS] 14c. Location volandor coordinates are correct: (8, 8) matches expected (8, 8)
+- [PASS] 14b. Location finalCastle exists
+- [PASS] 14c. Location finalCastle coordinates are correct: (9, 9) matches expected (9, 9)
+- [PASS] 15a. Step 1: Discover northernVillage succeeds
+- [PASS] 15b. Step 1: northernVillage is marked discovered
+- [PASS] 15a. Step 2: Discover lightHouseRuins succeeds
+- [PASS] 15b. Step 2: lightHouseRuins is marked discovered
+- [PASS] 15a. Step 3: Discover agatha succeeds
+- [PASS] 15b. Step 3: agatha is marked discovered
+- [PASS] 15a. Step 4: Discover volandor succeeds
+- [PASS] 15b. Step 4: volandor is marked discovered
+- [PASS] 15a. Step 5: Discover finalCastle succeeds
+- [PASS] 15b. Step 5: finalCastle is marked discovered
+- [PASS] 15c. finalCastle discovery awakens Titan
+- [PASS] 15d. endgame objective text updates safely
+- [PASS] 16a. WorldMapPanel displays finalCastle details name clearly
+- [PASS] 16b. QA discover status mentions Volandor when finalCastle is blocked
+- [PASS] 16c. TitanBossPanel hidden before finalCastle discovery
+- [PASS] 16d. TitanBossPanel visible after finalCastle discovery awakens Titan
+- [PASS] 17a. Attack succeeds in visual explanation check
+- [PASS] 17b. lastBattleResult contains guard count
+- [PASS] 17c. lastBattleResult contains damage dealt
+- [PASS] 17d. lastBattleResult contains return damage
+- [PASS] 17h. lastBattleResult contains Titan HP
+- [PASS] 17e. Defeating Titan triggers game victory status
+- [PASS] 17f. Titan defeated flag is true
+- [PASS] 17g. Game status is Victory
+
+Total PASS: 113
+Total FAIL: 0

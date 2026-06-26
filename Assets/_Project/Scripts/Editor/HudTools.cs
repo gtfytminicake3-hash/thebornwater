@@ -34,7 +34,7 @@ namespace TheBonwater.Rebuild.EditorTools {
             Text resourceText = GetOrCreateText(topHud, "HUD_ResourceText", -25);
             Text popDefenseText = GetOrCreateText(topHud, "HUD_PopDefenseText", -50);
             Text objectiveText = GetOrCreateText(topHud, "HUD_ObjectiveText", -75);
-            Text statusText = GetOrCreateText(topHud, "HUD_StatusText", -100);
+            Text statusText = GetOrCreateText(topHud, "HUD_StatusText", -130);
 
             // Bind to TopResourceBarView if exists
             TopResourceBarView view = Object.FindObjectOfType<TopResourceBarView>();
@@ -60,30 +60,37 @@ namespace TheBonwater.Rebuild.EditorTools {
 
         private static Text GetOrCreateText(Transform parent, string name, float yPos) {
             Transform t = parent.Find(name);
-            if (t != null) return t.GetComponent<Text>();
+            Text txt;
+            if (t != null) {
+                txt = t.GetComponent<Text>();
+                var rt = t.GetComponent<RectTransform>();
+                if (rt != null) {
+                    rt.anchoredPosition = new Vector2(0, yPos);
+                    rt.sizeDelta = new Vector2(800, name == "HUD_ObjectiveText" ? 50 : 30);
+                }
+            } else {
+                GameObject go = new GameObject(name);
+                Undo.RegisterCreatedObjectUndo(go, $"Create {name}");
+                go.transform.SetParent(parent, false);
+                var rt = go.AddComponent<RectTransform>();
+                rt.anchorMin = new Vector2(0.5f, 1f);
+                rt.anchorMax = new Vector2(0.5f, 1f);
+                rt.pivot = new Vector2(0.5f, 1f);
+                rt.sizeDelta = new Vector2(800, name == "HUD_ObjectiveText" ? 50 : 30);
+                rt.anchoredPosition = new Vector2(0, yPos);
 
-            GameObject go = new GameObject(name);
-            Undo.RegisterCreatedObjectUndo(go, $"Create {name}");
-            go.transform.SetParent(parent, false);
-            var rt = go.AddComponent<RectTransform>();
-            rt.anchorMin = new Vector2(0.5f, 1f);
-            rt.anchorMax = new Vector2(0.5f, 1f);
-            rt.pivot = new Vector2(0.5f, 1f);
-            rt.sizeDelta = new Vector2(800, 30);
-            rt.anchoredPosition = new Vector2(0, yPos);
-
-            var txt = go.AddComponent<Text>();
-            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-            txt.fontSize = 20;
-            txt.alignment = TextAnchor.UpperCenter;
-            txt.color = Color.white;
-            txt.horizontalOverflow = HorizontalWrapMode.Overflow;
-            txt.verticalOverflow = VerticalWrapMode.Overflow;
-            
-            var outline = go.AddComponent<Outline>();
-            outline.effectColor = new Color(0,0,0,0.8f);
-            outline.effectDistance = new Vector2(1, -1);
-            
+                txt = go.AddComponent<Text>();
+                txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                txt.fontSize = 20;
+                txt.alignment = TextAnchor.UpperCenter;
+                txt.color = Color.white;
+                txt.horizontalOverflow = HorizontalWrapMode.Overflow;
+                txt.verticalOverflow = VerticalWrapMode.Overflow;
+                
+                var outline = go.AddComponent<Outline>();
+                outline.effectColor = new Color(0,0,0,0.8f);
+                outline.effectDistance = new Vector2(1, -1);
+            }
             return txt;
         }
     }

@@ -1,0 +1,55 @@
+# Trade Backend Foundation Test Report
+- [PASS] Valid trade wood to iron reports success
+- [PASS] Valid trade wood decreased
+- [PASS] Valid trade iron increased
+- [PASS] Trade with insufficient resources reports failure
+- [PASS] Trade with insufficient resources leaves wood unchanged
+- [PASS] Trade with insufficient resources leaves iron unchanged
+- [PASS] Trade exceeding capacity reports failure
+- [PASS] Trade exceeding capacity leaves wood unchanged
+- [PASS] Trade exceeding capacity leaves iron unchanged
+- [PASS] Trade with invalid offer ID reports failure
+- [PASS] Trade with invalid offer ID leaves resources unchanged
+- [PASS] Trade with negative sell amount reports failure
+- [PASS] Trade with negative sell amount leaves wood unchanged
+- [PASS] Trade with negative sell amount leaves iron unchanged
+- [PASS] Old save without tradeState loads successfully
+- [PASS] tradeState is automatically initialized/sanitized from old save
+- [PASS] tradeState default isMerchantPresent is false
+- [PASS] New save with tradeState loads successfully
+- [PASS] New tradeState values are preserved on reload
+- [PASS] WorldMap locations count is preserved
+- [PASS] Home location remains discovered
+- [PASS] NewGame starts with merchant absent
+- [PASS] NewGame starts with daysUntilNextMerchant = 2
+- [PASS] NewGame starts with merchantDaysRemaining = 0
+- [PASS] Day 2 Morning: merchant absent
+- [PASS] Day 2 Morning: daysUntilNextMerchant = 1
+- [PASS] Day 3 Morning: merchant present
+- [PASS] Day 3 Morning: daysUntilNextMerchant = 0
+- [PASS] Day 3 Morning: merchantDaysRemaining = 1
+- [PASS] Day 3 Morning: arrived
+- [PASS] Day 4 Morning: merchant departed
+- [PASS] Day 4 Morning: daysUntilNextMerchant = 3
+- [PASS] Day 4 Morning: merchantDaysRemaining = 0
+- [PASS] Trade fails when merchant is absent
+- [PASS] Absent trade failure message
+- [PASS] Absent trade leaves resources unchanged (wood)
+- [PASS] Absent trade leaves resources unchanged (iron)
+- [PASS] Trade succeeds when merchant is present
+- [PASS] Present trade wood decreased
+- [PASS] Present trade iron increased
+- [PASS] Loaded merchant present state: isMerchantPresent
+- [PASS] Loaded merchant present state: daysUntilNextMerchant
+- [PASS] Loaded merchant present state: merchantDaysRemaining
+- [PASS] Loaded merchant absent state: isMerchantPresent
+- [PASS] Loaded merchant absent state: daysUntilNextMerchant
+- [PASS] Loaded merchant absent state: merchantDaysRemaining
+- [PASS] Sanitize null tradeState: isMerchantPresent
+- [PASS] Sanitize null tradeState: daysUntilNextMerchant
+- [PASS] Sanitize null tradeState: merchantDaysRemaining
+- [PASS] Sanitize negative daysUntilNextMerchant
+- [PASS] Sanitize negative merchantDaysRemaining
+- [PASS] Sanitize present with zero remaining: isMerchantPresent
+- [PASS] Sanitize present with zero remaining: daysUntilNextMerchant
+- [PASS] Sanitize absent with zero count: daysUntilNextMerchant

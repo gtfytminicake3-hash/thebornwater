@@ -35,8 +35,36 @@ namespace TheBonwater.Rebuild {
         public string lastAction = "";
         public List<string> taskLogs = new List<string>();
         public int lastRaidDay = -1;
+        public bool isRaidImminentToday = false;
         public ObjectiveState objectiveState = new ObjectiveState();
         public List<EquipmentStack> equipmentStock = new List<EquipmentStack>();
+        public WorldMapState worldMapState = new WorldMapState();
+        public List<string> pendingExpeditionReports = new List<string>();
+        public TradeState tradeState = new TradeState();
+        public QuestState questState = new QuestState();
+        public TitanState titanState = new TitanState();
+    }
+
+    [Serializable]
+    public class TitanState {
+        public bool isAwakened = false;
+        public bool isDefeated = false;
+        public bool endgameVictoryAchieved = false;
+        public int hp = 500;
+        public int maxHp = 500;
+        public string lastBattleResult = "";
+    }
+
+    [Serializable]
+    public class QuestState {
+        public string activeQuestId = "";
+        public List<string> completedQuestIds = new List<string>();
+        public bool tutorialCompleted;
+        public List<string> unlockedAchievementIds = new List<string>();
+        public List<string> pendingQuestNotifications = new List<string>();
+        public List<string> pendingAchievementNotifications = new List<string>();
+        public int completedExpeditionCountForQuest;
+        public int completedTradeCountForQuest;
     }
 
     [Serializable]
@@ -45,6 +73,7 @@ namespace TheBonwater.Rebuild {
         public int requiredHuts = 2;
         public bool villagersMustStayAlive = true;
         public string status = "IN_PROGRESS"; // "IN_PROGRESS", "COMPLETED", "FAILED"
+        public int currentMilestoneIndex = 1;
         public string fidelityLabel = "PROTOTYPE_FALLBACK";
         public string decodedValueSource = "Objective prototype, not original confirmed";
     }
@@ -54,6 +83,7 @@ namespace TheBonwater.Rebuild {
         public string id;
         public float x;
         public float y;
+        public int level = 1;
     }
 
     [Serializable]
@@ -67,6 +97,7 @@ namespace TheBonwater.Rebuild {
         public string id;
         public string type;
         public string targetBuildingId;
+        public string targetPlacementId = "";
         
         // Construction fields
         public string status; // "AwaitingResources", "UnderConstruction", "Completed"
@@ -95,6 +126,8 @@ namespace TheBonwater.Rebuild {
         public string weaponId = "";
         public string armorId = "";
         public string toolId = "";
+        public bool isOnExpedition;
+        public string expeditionId = "";
     }
 
     [Serializable]
@@ -126,5 +159,54 @@ namespace TheBonwater.Rebuild {
     public class EquipmentStack {
         public string equipmentId;
         public int count;
+    }
+
+    [Serializable]
+    public class WorldMapState {
+        public List<WorldMapLocationState> locations = new List<WorldMapLocationState>();
+        public List<ExpeditionState> activeExpeditions = new List<ExpeditionState>();
+    }
+
+    [Serializable]
+    public class WorldMapLocationState {
+        public string id;
+        public string displayName;
+        public string type;
+        public int x;
+        public int y;
+        public string spritePath;
+        public bool isDiscovered;
+        public bool isMajorLocation;
+        public int dangerLevel;
+        public string rewardType;
+        public int rewardAmount;
+        public string unlockRequirement;
+        public string notes;
+    }
+
+    [Serializable]
+    public class ExpeditionState {
+        public string id;
+        public string targetLocationId;
+        public List<string> villagerIds = new List<string>();
+        public List<VillagerPreviousJob> previousJobs = new List<VillagerPreviousJob>();
+        public int phasesRemaining;
+        public string rewardType;
+        public int rewardAmount;
+        public float injuryChance;
+        public string status;
+    }
+
+    [Serializable]
+    public class VillagerPreviousJob {
+        public string villagerId;
+        public string jobId;
+    }
+
+    [Serializable]
+    public class TradeState {
+        public bool isMerchantPresent = false;
+        public int daysUntilNextMerchant = 2;
+        public int merchantDaysRemaining = 0;
     }
 }

@@ -21,6 +21,7 @@ namespace TheBonwater.Rebuild.Data
         public BuildMenuDefinition BuildMenu { get; private set; }
         public WorldObjectListDefinition WorldObjects { get; private set; }
         public TownVisualLayoutDefinition VisualLayout { get; private set; }
+        public List<WorldMapLocationDefinition> WorldMapLocations { get; private set; } = new List<WorldMapLocationDefinition>();
 
         private string LoadJson(string filename)
         {
@@ -69,6 +70,46 @@ namespace TheBonwater.Rebuild.Data
 
                 string equipJson = LoadJson("equipment.json");
                 if (equipJson != null) Equipment = JsonConvert.DeserializeObject<List<EquipmentDefinition>>(equipJson, settings) ?? new List<EquipmentDefinition>();
+
+                string mapJson = null;
+                try {
+                    mapJson = LoadJson("world_map_definitions.json");
+                } catch (Exception ex) {
+                    UnityEngine.Debug.LogWarning($"[WorldMap] Failed to read world_map_definitions.json: {ex.Message}");
+                }
+
+                if (!string.IsNullOrEmpty(mapJson)) {
+                    try {
+                        WorldMapLocations = JsonConvert.DeserializeObject<List<WorldMapLocationDefinition>>(mapJson, settings);
+                    } catch (Exception ex) {
+                        UnityEngine.Debug.LogWarning($"[WorldMap] Failed to deserialize world_map_definitions.json: {ex.Message}");
+                    }
+                }
+
+                if (WorldMapLocations == null || WorldMapLocations.Count == 0) {
+                    if (string.IsNullOrEmpty(mapJson)) {
+                        UnityEngine.Debug.LogWarning("[WorldMap] world_map_definitions.json is missing or empty. Falling back to default home definition.");
+                    } else {
+                        UnityEngine.Debug.LogWarning("[WorldMap] world_map_definitions.json is corrupt or empty. Falling back to default home definition.");
+                    }
+                    WorldMapLocations = new List<WorldMapLocationDefinition> {
+                        new WorldMapLocationDefinition {
+                            id = "home",
+                            displayName = "Home",
+                            type = "home",
+                            x = 0,
+                            y = 0,
+                            discoveredAtStart = true,
+                            isMajorLocation = true,
+                            dangerLevel = 0,
+                            rewardType = "",
+                            rewardAmount = 0,
+                            spritePath = "Assets/_Project/ImportedDecoded/Sprite/City_Bonfire_2.png",
+                            unlockRequirement = "",
+                            notes = "Fallback default home location"
+                        }
+                    };
+                }
                 
                 ValidateDefinitions();
             }
@@ -93,6 +134,7 @@ namespace TheBonwater.Rebuild.Data
         public BuildingDefinition GetBuilding(string id) => Buildings.FirstOrDefault(b => b.id.Equals(id, StringComparison.OrdinalIgnoreCase));
         public EnemyDefinition GetEnemy(string id) => Enemies.FirstOrDefault(e => e.id.Equals(id, StringComparison.OrdinalIgnoreCase));
         public EquipmentDefinition GetEquipment(string id) => Equipment.FirstOrDefault(e => e.id.Equals(id, StringComparison.OrdinalIgnoreCase));
+        public WorldMapLocationDefinition GetWorldMapLocation(string id) => WorldMapLocations.FirstOrDefault(l => l.id.Equals(id, StringComparison.OrdinalIgnoreCase));
         public IReadOnlyList<EquipmentDefinition> GetAllEquipment() => Equipment;
     }
 }

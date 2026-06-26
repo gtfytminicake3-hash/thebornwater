@@ -145,4 +145,21 @@ namespace TheBonwater.Rebuild.Data
         public float y;
         public float scale = 1f;
     }
+
+    [Serializable]
+    public class WorldMapLocationDefinition {
+        public string id;
+        public string displayName;
+        public string type;
+        public int x;
+        public int y;
+        public string spritePath;
+        public bool discoveredAtStart;
+        public bool isMajorLocation;
+        public int dangerLevel;
+        public string rewardType;
+        public int rewardAmount;
+        public string unlockRequirement;
+        public string notes;
+    }
 }

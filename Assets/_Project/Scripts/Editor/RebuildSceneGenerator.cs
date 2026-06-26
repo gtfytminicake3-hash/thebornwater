@@ -282,7 +282,7 @@ namespace TheBonwater.Rebuild.Editor
             buildTxtRect.anchorMin = Vector2.zero; buildTxtRect.anchorMax = Vector2.one;
             buildTxtRect.sizeDelta = Vector2.zero;
             var buildTxt = buildTxtGo.AddComponent<Text>();
-            buildTxt.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            buildTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             buildTxt.alignment = TextAnchor.MiddleCenter;
             buildTxt.color = Color.black;
             buildTxt.text = "Build";
@@ -373,6 +373,69 @@ namespace TheBonwater.Rebuild.Editor
             selView.txtMoreJobs = CreateText(selVillPanel.transform, "More job actions: N/A", new Vector2(0, -60), 12, new Vector2(200, 20)).GetComponent<Text>();
 
             uiManager.selectedVillagerPanel = selView;
+
+            // OptionsScrollArea setup in scene generator
+            var optionsScrollGo = new GameObject("OptionsScrollArea");
+            optionsScrollGo.transform.SetParent(selVillPanel.transform, false);
+            var osRt = optionsScrollGo.AddComponent<RectTransform>();
+            osRt.anchorMin = new Vector2(0, 0);
+            osRt.anchorMax = new Vector2(1, 0);
+            osRt.pivot = new Vector2(0.5f, 0f);
+            osRt.anchoredPosition = new Vector2(0, 10);
+            osRt.sizeDelta = new Vector2(-20, 85);
+
+            var optionsScrollRect = optionsScrollGo.AddComponent<ScrollRect>();
+            optionsScrollRect.horizontal = false;
+            optionsScrollRect.vertical = true;
+            optionsScrollRect.movementType = ScrollRect.MovementType.Clamped;
+            optionsScrollRect.scrollSensitivity = 25;
+            optionsScrollRect.decelerationRate = 0.1f;
+            optionsScrollRect.viewport = osRt;
+
+            optionsScrollGo.AddComponent<RectMask2D>();
+
+            var contentGo = new GameObject("Content");
+            contentGo.transform.SetParent(optionsScrollGo.transform, false);
+            var contentRt = contentGo.AddComponent<RectTransform>();
+            contentRt.anchorMin = new Vector2(0, 1);
+            contentRt.anchorMax = new Vector2(1, 1);
+            contentRt.pivot = new Vector2(0, 1);
+            contentRt.anchoredPosition = Vector2.zero;
+            contentRt.sizeDelta = new Vector2(0, 200);
+
+            var vlg = contentGo.AddComponent<VerticalLayoutGroup>();
+            vlg.spacing = 6;
+            vlg.childControlHeight = true;
+            vlg.childForceExpandHeight = false;
+            vlg.childControlWidth = true;
+            vlg.childForceExpandWidth = true;
+            vlg.padding = new RectOffset(10, 10, 4, 4);
+
+            var fitter = contentGo.AddComponent<ContentSizeFitter>();
+            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+
+            optionsScrollRect.content = contentRt;
+
+            var defaultFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            if (defaultFont == null) defaultFont = Resources.GetBuiltinResource<Font>("Arial.ttf");
+
+            CreateSceneGenSectionHeader(contentGo.transform, "Jobs", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Builder", "Builder", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Woodcutter", "Woodcutter", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Forager", "Forager", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Farmer", "Farmer", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Iron Miner", "Iron Miner", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Coal Miner", "Coal Miner", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Guard", "Guard", defaultFont);
+            CreateSceneGenSectionHeader(contentGo.transform, "Tools", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Equip_hammer", "Equip Hammer (Stock: 0)", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Equip_leatherArmor", "Equip Leather Armor (Stock: 0)", defaultFont);
+            CreateSceneGenButton(contentGo.transform, "Btn_Equip_ironArmor", "Equip Iron Armor (Stock: 0)", defaultFont);
+            
+            var cancelBtnGo = CreateSceneGenButton(contentGo.transform, "Btn_Cancel", "Close Panel", defaultFont);
+            var cancelImg = cancelBtnGo.GetComponent<Image>();
+            if (cancelImg != null) cancelImg.color = new Color(0.8f, 0.2f, 0.2f);
 
             // --- 11. EVENT LOG (HUD) ---
             var logPanel = new GameObject("EventLogPanel");
@@ -507,7 +570,59 @@ namespace TheBonwater.Rebuild.Editor
             auth.slotId = id;
         }
 
+        private static void CreateSceneGenSectionHeader(Transform parent, string title, Font font)
+        {
+            var go = new GameObject("Header_" + title);
+            go.transform.SetParent(parent, false);
+            
+            var le = go.AddComponent<LayoutElement>();
+            le.minHeight = 20;
 
+            var txtGo = new GameObject("Text");
+            txtGo.transform.SetParent(go.transform, false);
+            var txtRt = txtGo.AddComponent<RectTransform>();
+            txtRt.anchorMin = Vector2.zero;
+            txtRt.anchorMax = Vector2.one;
+            txtRt.sizeDelta = Vector2.zero;
+
+            var txt = txtGo.AddComponent<Text>();
+            txt.font = font;
+            txt.text = title.ToUpper();
+            txt.alignment = TextAnchor.MiddleLeft;
+            txt.color = Color.yellow;
+            txt.fontSize = 14;
+            txt.fontStyle = FontStyle.Bold;
+        }
+
+        private static GameObject CreateSceneGenButton(Transform parent, string name, string label, Font font)
+        {
+            var go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+
+            var img = go.AddComponent<Image>();
+            img.color = new Color(0.25f, 0.5f, 0.85f);
+            
+            go.AddComponent<Button>();
+
+            var le = go.AddComponent<LayoutElement>();
+            le.minHeight = 42;
+
+            var txtGo = new GameObject("Text");
+            txtGo.transform.SetParent(go.transform, false);
+            var txtRt = txtGo.AddComponent<RectTransform>();
+            txtRt.anchorMin = Vector2.zero;
+            txtRt.anchorMax = Vector2.one;
+            txtRt.sizeDelta = Vector2.zero;
+
+            var txt = txtGo.AddComponent<Text>();
+            txt.font = font;
+            txt.text = label;
+            txt.alignment = TextAnchor.MiddleCenter;
+            txt.color = Color.white;
+            txt.fontSize = 22;
+
+            return go;
+        }
     }
 }
 #endif

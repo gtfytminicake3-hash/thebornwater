@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace TheBonwater.Rebuild {
     public abstract class GameCommand { }
     public class StartNewGameCommand : GameCommand { }
@@ -36,4 +38,29 @@ namespace TheBonwater.Rebuild {
         public string slot; // Weapon, Armor, Tool
         public string equipmentId; // empty/null means unequip
     }
+    [System.Serializable]
+    public class UpgradeBuildingCommand : GameCommand {
+        public string buildingPlacementId;
+    }
+    [System.Serializable]
+    public class DiscoverWorldMapLocationCommand : GameCommand {
+        public string locationId;
+    }
+    [System.Serializable]
+    public class DispatchExpeditionCommand : GameCommand {
+        public string targetLocationId;
+        public List<string> villagerIds = new List<string>();
+    }
+    public class DismissExpeditionReportCommand : GameCommand {}
+    public class DismissQuestNotificationCommand : GameCommand {}
+    public class DismissAchievementNotificationCommand : GameCommand {}
+    [System.Serializable]
+    public class TradeCommand : GameCommand {
+        public string offerId;
+    }
+    [System.Serializable]
+    public class AttackTitanCommand : GameCommand {
+        public List<string> attackerVillagerIds = new List<string>();
+    }
 }
+

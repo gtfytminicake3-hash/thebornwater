@@ -212,8 +212,131 @@ namespace TheBonwater.Rebuild.Editor {
                         TownInteractionController.Instance?.RefreshUI();
                     }
                 }
+
+                EditorGUILayout.Space();
+                GUILayout.Label("World Map Debug", EditorStyles.boldLabel);
+                
+                if (GUILayout.Button("Print World Map State")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        var state = backend.GetSnapshot();
+                        if (state == null || state.worldMapState == null || state.worldMapState.locations == null) {
+                            UnityEngine.Debug.LogWarning("[WorldMap Debug] World Map state is not initialized.");
+                        } else {
+                            var locs = state.worldMapState.locations;
+                            UnityEngine.Debug.Log($"==== WORLD MAP STATE SNAPSHOT ({locs.Count} locations) ====");
+                            foreach (var loc in locs) {
+                                UnityEngine.Debug.Log($"[Location] ID: {loc.id} | Name: {loc.displayName} | Type: {loc.type} | Coords: ({loc.x}, {loc.y}) | Discovered: {loc.isDiscovered} | Danger: {loc.dangerLevel}");
+                            }
+                        }
+                    }
+                }
+
+                if (GUILayout.Button("Discover Northern Village")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        var res = backend.Execute(new DiscoverWorldMapLocationCommand { locationId = "northernVillage" });
+                        UnityEngine.Debug.Log($"[WorldMap Debug] Discover Northern Village Command Executed. Success: {res.success}, Message: {res.message}");
+                        TownInteractionController.Instance?.RefreshUI();
+                    }
+                }
+
+                if (GUILayout.Button("Discover Slaver Cove")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        var res = backend.Execute(new DiscoverWorldMapLocationCommand { locationId = "slaverCove" });
+                        UnityEngine.Debug.Log($"[WorldMap Debug] Discover Slaver Cove Command Executed. Success: {res.success}, Message: {res.message}");
+                        TownInteractionController.Instance?.RefreshUI();
+                    }
+                }
+
+                if (GUILayout.Button("Dispatch First Villager to Northern Village")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        var state = backend.GetSnapshot();
+                        var villager = state.villagers.FirstOrDefault(v => v.hp > 0 && !v.isOnExpedition);
+                        if (villager == null) {
+                            UnityEngine.Debug.LogWarning("[WorldMap Debug] No available living villagers to dispatch.");
+                        } else {
+                            UnityEngine.Debug.Log($"[WorldMap Debug] Dispatch request: northernVillage");
+                            var cmd = new DispatchExpeditionCommand {
+                                targetLocationId = "northernVillage",
+                                villagerIds = new System.Collections.Generic.List<string> { villager.id }
+                            };
+                            var res = backend.Execute(cmd);
+                            UnityEngine.Debug.Log($"[WorldMap Debug] Command Result: Success={res.success}");
+                            var stateAfter = backend.GetSnapshot();
+                            int expCount = stateAfter.worldMapState?.activeExpeditions?.Count ?? 0;
+                            UnityEngine.Debug.Log($"[WorldMap Debug] Expedition count after={expCount}");
+                            TownInteractionController.Instance?.RefreshUI();
+                        }
+                    }
+                }
+
+                if (GUILayout.Button("Print Expedition State")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        var state = backend.GetSnapshot();
+                        int expCount = state.worldMapState?.activeExpeditions?.Count ?? 0;
+                        UnityEngine.Debug.Log($"[WorldMap Debug] Expeditions: total={expCount}");
+                        if (state.worldMapState?.activeExpeditions != null) {
+                            foreach (var exp in state.worldMapState.activeExpeditions) {
+                                string vIds = string.Join(",", exp.villagerIds);
+                                UnityEngine.Debug.Log($"[WorldMap Debug] Expedition id={exp.id} target={exp.targetLocationId} villagers={vIds} phasesRemaining={exp.phasesRemaining} status={exp.status}");
+                            }
+                        }
+                        if (state.villagers != null) {
+                            foreach (var v in state.villagers) {
+                                string isAway = v.isOnExpedition ? "True" : "False";
+                                UnityEngine.Debug.Log($"[WorldMap Debug] Villager id={v.id} job={v.job} isOnExpedition={isAway} expeditionId={v.expeditionId}");
+                            }
+                        }
+                    }
+                }
+
+                if (GUILayout.Button("Advance Time (Expedition Tick)")) {
+                    var backend = GameServiceLocator.Backend;
+                    if (backend == null) {
+                        UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                    } else {
+                        backend.Execute(new AdvanceTimeCommand());
+                        UnityEngine.Debug.Log("[WorldMap Debug] Advanced time by one phase.");
+                        TownInteractionController.Instance?.RefreshUI();
+                    }
+                }
             } else {
                 GUILayout.Label("Enter Play Mode to use these tools.");
+                EditorGUILayout.Space();
+                GUILayout.Label("World Map Debug (Requires Play Mode)", EditorStyles.boldLabel);
+                
+                if (GUILayout.Button("Print World Map State")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
+                if (GUILayout.Button("Discover Northern Village")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
+                if (GUILayout.Button("Discover Slaver Cove")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
+                if (GUILayout.Button("Dispatch First Villager to Northern Village")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
+                if (GUILayout.Button("Print Expedition State")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
+                if (GUILayout.Button("Advance Time (Expedition Tick)")) {
+                    UnityEngine.Debug.LogWarning("[WorldMap Debug] No active backend found. Enter Play Mode and start a game first.");
+                }
             }
         }
     }

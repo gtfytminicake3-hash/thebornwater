@@ -5,7 +5,8 @@
     "assetKey": "villagerFemale",
     "animationKey": "villager_work",
     "status": "FALLBACK_REBUILT",
-    "sourceEvidence": []
+    "sourceEvidence": [],
+    "productionPerPhase": 4
   },
   {
     "id": "builder",
@@ -46,7 +47,8 @@
     "assetKey": "villagerMale",
     "animationKey": "villager_work",
     "status": "FALLBACK_REBUILT",
-    "sourceEvidence": []
+    "sourceEvidence": [],
+    "productionPerPhase": 3
   },
   {
     "id": "coalMiner",
@@ -81,6 +83,6 @@
     "animationKey": "villager_work",
     "status": "ORIGINAL_CONFIRMED",
     "sourceEvidence": ["Assembly-CSharp.decompiled.cs enum Jobs.Farmer"],
-    "productionPerPhase": 3
+    "productionPerPhase": 6
   }
 ]

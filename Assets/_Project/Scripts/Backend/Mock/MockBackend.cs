@@ -66,6 +66,15 @@ namespace TheBonwater.Rebuild {
                     catch (Exception e) { result.success = false; Log($"Failed to load: {e.Message}"); }
                 } else { result.success = false; Log("No save file found."); }
             }
+            else if (command is DismissExpeditionReportCommand) {
+                if (state.pendingExpeditionReports != null && state.pendingExpeditionReports.Count > 0) {
+                    state.pendingExpeditionReports.RemoveAt(0);
+                    Log("Expedition report dismissed.");
+                }
+            }
+            else if (command is TradeCommand) {
+                Log("Mock Trade Command executed.");
+            }
             return result;
         }
         private void Log(string msg) {

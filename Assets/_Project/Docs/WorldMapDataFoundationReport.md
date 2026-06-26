@@ -1,0 +1,66 @@
+# World Map Data Foundation Test Report
+- [PASS] worldMapState is not null
+- [PASS] locations is not null
+- [PASS] 12 locations initialized in world map
+- [PASS] Home location exists
+- [PASS] Home is discovered
+- [PASS] Agatha location exists
+- [PASS] Agatha is not discovered at start
+- [PASS] Agatha coords are correct
+- [PASS] Agatha dangerLevel is correct
+- [PASS] Agatha rewardType is correct
+- [PASS] Equipment stock is not null on start
+- [PASS] Save file exists after SaveGameCommand
+- [PASS] Loaded worldMapState is not null
+- [PASS] Loaded locations count matches
+- [PASS] Loaded Home remains discovered
+- [PASS] Loaded Agatha remains undiscovered
+- [PASS] Loaded equipmentStock contains stoneAxe
+- [PASS] Forced Home to be discovered
+- [PASS] Duplicate home location removed (exactly 1 left)
+- [PASS] Missing definition (Agatha) was successfully merged back in
+- [PASS] Obsolete saved location (Lost Island) was preserved
+- [PASS] Completed Hut is Level 1
+- [PASS] Hut level upgraded to 2
+- [PASS] Population capacity increased correctly
+- [PASS] Hut Level 2 remains Level 2 after reload with world map initialized
+- [PASS] Population capacity remains intact after load
+- [PASS] Discover adjacent location succeeds
+- [PASS] Adjacent location is marked as discovered
+- [PASS] Discover already discovered location fails
+- [PASS] Discover invalid location fails
+- [PASS] Discover empty location ID fails
+- [PASS] Slaver's Cove is initially undiscovered
+- [PASS] Discover non-adjacent location fails
+- [PASS] Slaver's Cove remains undiscovered
+- [PASS] Save file exists after discovery save
+- [PASS] Discovered location (northernVillage) remains discovered after load
+- [PASS] Undiscovered location (slaverCove) remains undiscovered after load
+- [PASS] Home remains discovered after load
+- [PASS] Baseline max population capacity is stable
+- [PASS] Dispatch to undiscovered location fails
+- [PASS] Dispatch with missing villager fails
+- [PASS] Dispatch with dead villager fails
+- [PASS] Successful dispatch command executes
+- [PASS] Villager is marked isOnExpedition
+- [PASS] Villager expeditionId is set
+- [PASS] Villager job is set to Expedition
+- [PASS] Active expedition is tracked in state
+- [PASS] Expedition has correct phasesRemaining
+- [PASS] Active expedition phasesRemaining decreased
+- [PASS] Villager is still on expedition
+- [PASS] Villager isOnExpedition cleared after resolution
+- [PASS] Villager expeditionId cleared
+- [PASS] Villager previous job restored
+- [PASS] Expedition reward granted and clamped to cap
+- [PASS] Expedition removed from active expeditions
+- [PASS] Second dispatch succeeded
+- [PASS] Save file written with active expedition
+- [PASS] Loaded state has active expedition
+- [PASS] Loaded villager remains isOnExpedition
+- [PASS] Loaded villager has correct expeditionId
+- [PASS] Corrupted expedition was removed
+- [PASS] Villager isOnExpedition cleared after corruption repair
+- [PASS] Villager expeditionId cleared after corruption repair
+- [PASS] Villager returned to preserved previous job (Woodcutter)
+- [PASS] Villager whose job is full fell back to Builder

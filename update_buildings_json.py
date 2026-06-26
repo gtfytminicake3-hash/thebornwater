@@ -7,7 +7,7 @@ with open(filepath, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 for item in data:
-    if item["id"] in ["Hut", "Storage", "GuardTower"]:
+    if item["id"].lower() in ["hut", "storage", "guardtower"]:
         item["behaviorEvidence"] = "BuildingInstance.currentCompletion/finalCompletion, DepositResource, UpdateConstruction"
         item["balanceEvidence"] = "UNKNOWN or decoded source if found"
         item["fidelity"] = "DECODE_EVIDENCE_PARTIAL"

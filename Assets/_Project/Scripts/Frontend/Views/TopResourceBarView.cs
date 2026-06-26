@@ -21,6 +21,21 @@ namespace TheBonwater.Rebuild {
         private string strObj = "";
         private string strStatus = "";
 
+        private void SetTextLayout(Text text, float yPos, float height) {
+            if (text == null) return;
+            var rt = text.GetComponent<RectTransform>();
+            if (rt != null) {
+                rt.anchorMin = new Vector2(0.5f, 1f);
+                rt.anchorMax = new Vector2(0.5f, 1f);
+                rt.pivot = new Vector2(0.5f, 1f);
+                rt.sizeDelta = new Vector2(rt.sizeDelta.x > 100f ? rt.sizeDelta.x : 600f, height);
+                rt.anchoredPosition = new Vector2(rt.anchoredPosition.x, yPos);
+            }
+            text.alignment = TextAnchor.UpperCenter;
+            text.horizontalOverflow = HorizontalWrapMode.Overflow;
+            text.verticalOverflow = VerticalWrapMode.Overflow;
+        }
+
         private void Start() {
             autoTime = FindObjectOfType<AutoTimeController>();
             if (autoTime != null) {
@@ -31,12 +46,19 @@ namespace TheBonwater.Rebuild {
             if (timeText == null || resourceText == null) {
                 Transform parent = txtResources != null ? txtResources.transform.parent : transform;
                 
-                timeText = GetOrCreateSlot(parent, "HUD_TimeText", -24);
-                resourceText = GetOrCreateSlot(parent, "HUD_ResourceText", -42);
+                timeText = GetOrCreateSlot(parent, "HUD_TimeText", -20);
+                resourceText = GetOrCreateSlot(parent, "HUD_ResourceText", -40);
                 popDefenseText = GetOrCreateSlot(parent, "HUD_PopDefenseText", -60);
-                objectiveText = GetOrCreateSlot(parent, "HUD_ObjectiveText", -78);
-                statusText = GetOrCreateSlot(parent, "HUD_StatusText", -96);
+                objectiveText = GetOrCreateSlot(parent, "HUD_ObjectiveText", -80);
+                statusText = GetOrCreateSlot(parent, "HUD_StatusText", -135);
             }
+
+            // Force correct vertical positions and heights at runtime
+            if (timeText != null) SetTextLayout(timeText, -20, 20);
+            if (resourceText != null) SetTextLayout(resourceText, -40, 20);
+            if (popDefenseText != null) SetTextLayout(popDefenseText, -60, 20);
+            if (objectiveText != null) SetTextLayout(objectiveText, -80, 50);
+            if (statusText != null) SetTextLayout(statusText, -135, 20);
 
             if (txtResources != null && timeText != null && txtResources.gameObject != timeText.gameObject) {
                 txtResources.gameObject.SetActive(false);
@@ -131,12 +153,7 @@ namespace TheBonwater.Rebuild {
             
             string objStatus = snap.gameStatus == "Playing" ? "Playing" : snap.gameStatus;
             
-            string shortObj = snap.objectiveText;
-            if (!string.IsNullOrEmpty(shortObj)) {
-                shortObj = shortObj.Replace("Survive to ", "").Replace("and build", "+");
-            }
-            
-            strObj = $"Objective: {shortObj}";
+            strObj = $"Objective: {snap.objectiveText}";
             strStatus = $"Status: {objStatus}";
 
             if (resourceText != null) resourceText.text = strWoodFoodIron;

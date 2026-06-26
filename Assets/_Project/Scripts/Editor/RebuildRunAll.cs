@@ -10,6 +10,7 @@ namespace TheBonwater.Rebuild.Editor
         {
             RebuildSceneGenerator.CreateMainMenuScene();
             RebuildSceneGenerator.CreateScenes();
+            EnsureSceneOwnedUIPanels.Execute();
             RebuildVerifier.Verify();
         }
     }

@@ -67,10 +67,14 @@
     <Compile Include="Assets\_Project\Scripts\Editor\PlayerControlUXTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\VillagerInteractionTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\TheBonwaterTestToolsWindow.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TradePolishTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\BuildMenuCommandBindingRegressionTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\Phase14BUpgradePolishTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\EnsureSceneOwnedSpawnAndBuildSlots.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\ThreeDayGameplayLoopTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RebuildBuildSettingsSetup.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RuntimeCoreBugfixTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\EnsureSceneOwnedWorksites.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\Phase7BAutoTimeLoopTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AnimCheck.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RebuildEntrySetup.cs" />
@@ -79,19 +83,30 @@
     <Compile Include="Assets\_Project\Scripts\Editor\RaidVisualTestTool.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AnimationRegistryBuilder.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\EndToEndSmokeTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\MonsterSpawnScalingTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\QuestAchievementTutorialTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\BuildMenuAndVisualWiringTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TradeHardeningTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AutoRebuilderScript.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\EnsureSceneOwnedUIPanels.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\WorldMapDataFoundationTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RebuildRunAll.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RebuildSceneGenerator.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RebuildVerifier.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AssetBindingAndSpawnRuleTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\WorldMapUITest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\RuntimeGameplayBugfixTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\HudTools.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TitanEndgameTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\ScopedBuildingListAndCompositionTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\ForceSceneRegeneration.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AutoWorldRendererTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TradeBackendFoundationTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\PlayModeStartSceneSetter.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\AutoAnimationIntegrationTest.cs" />
     <Compile Include="Assets\_Project\Scripts\Editor\Phase1To6OutputTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TestLoadSprite.cs" />
+    <Compile Include="Assets\_Project\Scripts\Editor\TradeUITest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

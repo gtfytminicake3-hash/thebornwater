@@ -297,7 +297,7 @@ Check("Job production uses JobDefinition", true); // Implicit via pass of Core L
             Check("VisualReconstructionReport.md exists", File.Exists(docsPath + "VisualReconstructionReport.md"));
             Check("TownScene has no debug HUD buttons", true); // Already checked by Sprint 06 logic
             Check("MainMenu New Game/Continue still bind to backend", File.ReadAllText("Assets/_Project/Scripts/Frontend/MainMenuController.cs").Contains("new LocalGameBackend()"));
-            Check("TownScene HUD still reads GameSnapshot", File.ReadAllText("Assets/_Project/Scripts/Frontend/Views/ResourceBarView.cs").Contains("snap."));
+            Check("TownScene HUD still reads GameSnapshot", File.ReadAllText("Assets/_Project/Scripts/Frontend/Views/TopResourceBarView.cs").Contains("snap."));
             Check("Construction UI still displays progress", true); // Validated by SmokeTest
             Check("No MockBackend in runtime player flow", true); // Repeated check
             Check("Project compiles", true);
@@ -308,7 +308,7 @@ Check("Job production uses JobDefinition", true); // Implicit via pass of Core L
             Check("player HUD has no +10 resource debug button", !File.ReadAllText("Assets/_Project/Scripts/Frontend/TownInteractionController.cs").Contains("btnCollectWood"));
             Check("player HUD has no Force Raid debug button", !File.ReadAllText("Assets/_Project/Scripts/Frontend/TownInteractionController.cs").Contains("btnForceRaid"));
             Check("player HUD has no direct fake state mutation", true);
-            Check("resource HUD reads from GameSnapshot", File.ReadAllText("Assets/_Project/Scripts/Frontend/Views/ResourceBarView.cs").Contains("snap."));
+            Check("resource HUD reads from GameSnapshot", File.ReadAllText("Assets/_Project/Scripts/Frontend/Views/TopResourceBarView.cs").Contains("snap."));
             Check("construction UI displays TaskSnapshot/progress", true); // Ensured by flow
             Check("Build Hut does not instant-complete", !backendCode_p1.Contains("CompleteConstruction(taskId)"));
             Check("Save/Load UI binds to backend save/load", File.ReadAllText("Assets/_Project/Scripts/Frontend/TownInteractionController.cs").Contains("SaveGameCommand"));
@@ -484,12 +484,58 @@ Check("Job production uses JobDefinition", true); // Implicit via pass of Core L
             Check("Smoke test pass", true); // Verifier assumes smoke test runs externally
             Check("Runtime trace test pass", true);
             Check("Player control UX test pass", true);
+            // Self-verification for BlacksmithCraftPanel selection logic
+            var testSelPanelGo = GameObject.Find("SelectedVillagerPanel");
+            if (testSelPanelGo != null) {
+                var testSelView = testSelPanelGo.GetComponent<SelectedVillagerPanelView>();
+                if (testSelView != null) {
+                    var testBackend = new LocalGameBackend();
+                    GameServiceLocator.RegisterBackend(testBackend);
+                    var testSnap = testBackend.GetSnapshot();
+                    
+                    // Setup test snapshot
+                    testSnap.buildings.Clear();
+                    testSnap.buildings.Add(new BuildingSnapshot { id = "blacksmithsForge", count = 1 });
+                    
+                    testSnap.villagers.Clear();
+                    testSnap.villagers.Add(new VillagerSnapshot { id = "v_blacksmith", name = "Caelum", job = "Blacksmith", hp = 100 });
+                    testSnap.villagers.Add(new VillagerSnapshot { id = "v_woodcutter", name = "Bryn", job = "Woodcutter", hp = 100 });
+                    
+                    // Test 1: Select Blacksmith
+                    testSelView.OpenJobModalForVillager("v_blacksmith");
+                    bool showBlacksmith = testSelView.blacksmithCraftPanel != null && testSelView.blacksmithCraftPanel.activeSelf;
+                    Check("Selected Blacksmith shows BlacksmithCraftPanel", showBlacksmith);
+                    
+                    // Test 2: Select Non-Blacksmith
+                    testSelView.OpenJobModalForVillager("v_woodcutter");
+                    bool showWoodcutter = testSelView.blacksmithCraftPanel != null && testSelView.blacksmithCraftPanel.activeSelf;
+                    Check("Selected Woodcutter hides BlacksmithCraftPanel", !showWoodcutter);
+                }
+            }
 
             report.AppendLine();
             report.AppendLine($"Total PASS: {pass}");
             report.AppendLine($"Total FAIL: {fail}");
             
             File.WriteAllText(reportPath, report.ToString());
+            
+            // Run Titan/Endgame tests first so other failures do not abort it
+            TitanEndgameTest.Run();
+
+            // Run Trade Backend Foundation Test first so other failures do not abort it
+            TradeBackendFoundationTest.Run();
+            TradeUITest.Run();
+            TradeHardeningTest.Run();
+            TradePolishTest.Run();
+            
+            // Run Quest/Achievement/Tutorial tests
+            QuestAchievementTutorialTest.Run();
+
+            // Run World Map Data Foundation, UI, and Expedition tests
+            WorldMapDataFoundationTest.Run();
+            WorldMapUITest.Run();
+            MonsterSpawnScalingTest.Run();
+
             AssetDatabase.Refresh();
             UnityEngine.Debug.Log($"Verification Complete! PASS: {pass}, FAIL: {fail}.");
         }

@@ -647,6 +647,7 @@ namespace TheBonwater.Rebuild {
 
             // Villagers
             foreach (var v in snap.villagers) {
+                if (v.isOnExpedition) continue;
                 expectedIds.Add($"villager:{v.id}");
             }
 
@@ -927,7 +928,7 @@ namespace TheBonwater.Rebuild {
             if (string.IsNullOrEmpty(targetId)) return false;
             if (targetId == "fleeing/combat" || targetId == "dead" || targetId == "none") return false;
             if (job == "Builder") return targetId.StartsWith("construction:");
-            if (job == "Blacksmith") return targetId.StartsWith("building:blacksmithsForge") || targetId.StartsWith("construction:blacksmithsForge");
+            if (job == "Blacksmith") return targetId.StartsWith("building:blacksmithsForge");
             if (job == "towerGuard") return targetId.StartsWith("building:guardTower");
             if (job == "Miner") return targetId == "mine_1" || targetId.ToLowerInvariant().Contains("mine") || targetId.ToLowerInvariant().Contains("iron");
             if (job == "coalMiner") return targetId == "coalMine_1" || targetId.ToLowerInvariant().Contains("coalmine") || targetId.ToLowerInvariant().Contains("coal");
@@ -989,6 +990,14 @@ namespace TheBonwater.Rebuild {
             else if (vData.job == "Builder") {
                 var tsk = System.Linq.Enumerable.FirstOrDefault(snap.tasks, t => t.status == "UnderConstruction" || t.status == "AwaitingResources");
                 if (tsk != null) {
+                    if (tsk.type == "UpgradeBuilding") {
+                        var placement = snap.userPlacements.FirstOrDefault(p => p.id == tsk.targetPlacementId);
+                        if (placement != null) {
+                            anchor = new Vector2(placement.x, placement.y);
+                            tId = placement.id;
+                            return;
+                        }
+                    }
                     WorldObjectView bestSite = null;
                     string exactConstructionId = $"construction:{tsk.targetBuildingId}:{tsk.id}";
                     foreach (var viewItem in this.registry.Values) {
@@ -1027,11 +1036,38 @@ namespace TheBonwater.Rebuild {
                 if (twr != null) { anchor = GetPos(twr.transform); tId = twr.objectId; }
             }
             else if (vData.job == "Blacksmith") {
-                var forgeConstruction = System.Linq.Enumerable.FirstOrDefault(this.registry.Values, v => v != null && v.objectId.StartsWith("construction:blacksmithsForge:"));
-                if (forgeConstruction != null) { anchor = GetPos(forgeConstruction.transform); tId = forgeConstruction.objectId; return; }
+                // Find all alive Blacksmiths, ordered stably by ID
+                var blacksmiths = snap.villagers
+                    .Where(v => v.job == "Blacksmith" && v.hp > 0)
+                    .OrderBy(v => v.id)
+                    .ToList();
+                int idx = blacksmiths.FindIndex(v => v.id == vData.id);
 
-                var forge = System.Linq.Enumerable.FirstOrDefault(this.registry.Values, v => v != null && v.objectId.StartsWith("building:blacksmithsForge"));
-                if (forge != null) { anchor = GetPos(forge.transform); tId = forge.objectId; }
+                // Get completed forge count from snap
+                int completedCount = snap.buildings.FirstOrDefault(b => b.id == "blacksmithsForge")?.count ?? 0;
+
+                // Find all completed blacksmiths forges from the registry, matching completed count
+                var completedForges = this.registry.Values
+                    .Where(v => {
+                        if (v == null) return false;
+                        if (!v.objectId.StartsWith("building:blacksmithsForge:")) return false;
+                        var parts = v.objectId.Split(':');
+                        if (parts.Length >= 3 && int.TryParse(parts[2], out int fIndex)) {
+                            return fIndex < completedCount;
+                        }
+                        return false;
+                    })
+                    .OrderBy(v => v.objectId)
+                    .ToList();
+
+                if (idx >= 0 && completedForges.Count > 0) {
+                    int forgeIndex = idx / 2;
+                    if (forgeIndex < completedForges.Count) {
+                        var assignedForge = completedForges[forgeIndex];
+                        anchor = GetPos(assignedForge.transform);
+                        tId = assignedForge.objectId;
+                    }
+                }
             }
             else if (vData.job == "Miner") {
                 var mine = System.Linq.Enumerable.FirstOrDefault(this.registry.Values, v => v != null && (v.objectId.ToLowerInvariant().Contains("mine") || v.objectId.ToLowerInvariant().Contains("iron")));
@@ -1373,8 +1409,15 @@ namespace TheBonwater.Rebuild {
                 var viewScript = view.gameObject.GetComponent<BuildingRuntimeView>() ?? view.gameObject.AddComponent<BuildingRuntimeView>();
                 viewScript.SetConstructionState(taskData);
             } else if (id.StartsWith("building:")) {
-                var viewScript = view.gameObject.GetComponent<BuildingRuntimeView>();
-                if (viewScript != null) viewScript.SetCompleteState();
+                var viewScript = view.gameObject.GetComponent<BuildingRuntimeView>() ?? view.gameObject.AddComponent<BuildingRuntimeView>();
+                viewScript.SetCompleteState();
+                
+                int level = 1;
+                if (snap.userPlacements != null) {
+                    var place = snap.userPlacements.Find(p => p.id == id);
+                    if (place != null) level = place.level;
+                }
+                viewScript.SetLevel(level);
             } else if (id.StartsWith("villager:")) {
                 var vData = snap.villagers.Find(v => v.id == id.Split(':')[1]);
                 if (DEBUG_VISUAL_AUDIT) {
@@ -1639,6 +1682,7 @@ namespace TheBonwater.Rebuild {
     public class BuildingRuntimeView : MonoBehaviour {
         private Text txtProgress;
         private GameObject overlay;
+        private Text txtLevel;
         private void EnsureOverlay() {
             if (overlay == null) {
                 overlay = new GameObject("ConstructionLabel");
@@ -1658,6 +1702,20 @@ namespace TheBonwater.Rebuild {
                 txtProgress.color = Color.yellow;
             }
         }
+        private void EnsureLevelLabel() {
+            if (txtLevel == null) {
+                var txtGo = new GameObject("LevelLabel");
+                txtGo.transform.SetParent(transform, false);
+                var tr = txtGo.AddComponent<RectTransform>();
+                tr.anchoredPosition = new Vector2(0, 45);
+                tr.sizeDelta = new Vector2(100, 20);
+                txtLevel = txtGo.AddComponent<Text>();
+                txtLevel.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                txtLevel.alignment = TextAnchor.MiddleCenter;
+                txtLevel.color = Color.yellow;
+                txtLevel.fontSize = 18;
+            }
+        }
         public void SetConstructionState(TaskSnapshot task) {
             EnsureOverlay();
             overlay.SetActive(true);
@@ -1671,6 +1729,15 @@ namespace TheBonwater.Rebuild {
         }
         public void SetCompleteState() {
             if (overlay != null) overlay.SetActive(false);
+        }
+        public void SetLevel(int level) {
+            if (level > 1) {
+                EnsureLevelLabel();
+                txtLevel.text = $"Lv{level}";
+                txtLevel.gameObject.SetActive(true);
+            } else {
+                if (txtLevel != null) txtLevel.gameObject.SetActive(false);
+            }
         }
     }
 

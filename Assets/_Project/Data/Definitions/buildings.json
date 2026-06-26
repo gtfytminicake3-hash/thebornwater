@@ -29,7 +29,10 @@
       "wood": 50
     },
     "constructionRequired": 100,
-    "constructionAssetKey": null
+    "constructionAssetKey": null,
+    "behaviorEvidence": "BuildingInstance.currentCompletion/finalCompletion, DepositResource, UpdateConstruction",
+    "balanceEvidence": "UNKNOWN or decoded source if found",
+    "fidelity": "DECODE_EVIDENCE_PARTIAL"
   },
   {
     "id": "storage",
@@ -45,7 +48,10 @@
       "wood": 20
     },
     "constructionRequired": 50,
-    "constructionAssetKey": null
+    "constructionAssetKey": null,
+    "behaviorEvidence": "BuildingInstance.currentCompletion/finalCompletion, DepositResource, UpdateConstruction",
+    "balanceEvidence": "UNKNOWN or decoded source if found",
+    "fidelity": "DECODE_EVIDENCE_PARTIAL"
   },
   {
     "id": "guardTower",
@@ -62,7 +68,10 @@
       "iron": 20
     },
     "constructionRequired": 100,
-    "constructionAssetKey": null
+    "constructionAssetKey": null,
+    "behaviorEvidence": "BuildingInstance.currentCompletion/finalCompletion, DepositResource, UpdateConstruction",
+    "balanceEvidence": "UNKNOWN or decoded source if found",
+    "fidelity": "DECODE_EVIDENCE_PARTIAL"
   },
   {
     "id": "blacksmithsForge",
